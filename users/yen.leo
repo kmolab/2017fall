@@ -854,6 +854,18 @@ Author: yen
 
 &lt;!-- PELICAN_END_SUMMARY --&gt;
 
+&lt;iframe src="https://player.vimeo.com/video/236370070" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/236370070"&gt;國立虎尾科技大學機械設計工程系計算機程式 - 一乙第四週第一部分, 說明當版本資料變更時, 可以利用 fossil status 查看內容, 必要時利用  fossil delete 配合維護近端版本的一致性.&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/236372550" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/236372550"&gt;國立虎尾科技大學機械設計工程系計算機程式 - 一乙第四週第二部分, 說明如何利用 .fossil-settings 目錄下的 ignore-glob 檔案, 避開從近端推送到遠端的特定檔案.&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/236855273" width="640" height="512" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/236855273"&gt;國立虎尾科技大學機械設計工程系計算機程式 - 一甲第四週第一部分, 重複練習如何安排各學員近端的倉儲架構, 如何從範例倉儲複製資料.&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/236859627" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;a href="https://vimeo.com/236859627"&gt;國立虎尾科技大學機械設計工程系計算機程式 - 一甲第四週第二部分, 說明如何利用 Leo Editor 新增個人網誌.&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
 首先在網頁中置入可以練習基本 Python3 程式語法的環境, 採用的架構為 Brython 3.3.4 版, 可以在瀏覽器中將使用者的 Python3 程式轉為 Javascript 後執行.
 
 &lt;!-- 導入 FileSaver 與 filereader --&gt;
