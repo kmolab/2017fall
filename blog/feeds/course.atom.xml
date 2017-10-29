@@ -26,7 +26,32 @@
 &lt;h3&gt;Fossil SCM 組態管理系統&lt;/h3&gt;
 &lt;p&gt;學習 Fossil 最佳的方式就是親自操作使用, fossil.exe 2.3 版檔案大小只有約 6MB, 但是卻提供網際伺服 Html 與 Javascript 檔案與 Wiki 的功能, 也能透過瀏覽器在 Wiki 文章中附加檔案, 各學員必須從個人倉儲熟悉組態管理系統的各項功能後, 在專題製作過程利用 Fossil SCM 進行協同設計.&lt;/p&gt;
 &lt;h3&gt;Solvespace、Onshape 與 V-rep&lt;/h3&gt;
-&lt;p&gt;學習這三套系統的最佳途徑 , 就是從各&lt;span style="background-color: #ffff00;"&gt;官方網頁中的 Tutorial 與說明文件中逐步熟習各套件的特性與使用方法&lt;/span&gt;, 並且透過專題製作, 實際應用其功能 , &lt;span style="background-color: #ffff00;"&gt;解決&lt;/span&gt;過程中所面臨的各種&lt;span style="background-color: #ffff00;"&gt;問題&lt;/span&gt;.&lt;/p&gt;</content><category term="2017fall"></category><category term="Summary"></category></entry><entry><title>CADP 第七週線上考試</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-cadp-w7-exam.html" rel="alternate"></link><published>2017-10-20T13:00:00+08:00</published><updated>2017-10-20T13:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-10-20:/2017fall/doc/trunk/blog/kmol-cadp-w7-exam.html</id><summary type="html">&lt;p&gt;W7-W9 週為本學期期中階段的考試週, 其中第一堂課時間將要求學員直接利用教室中的電腦 ,以 ShareX 拍攝與課程相關的操作影片.&lt;/p&gt;
+&lt;p&gt;學習這三套系統的最佳途徑 , 就是從各&lt;span style="background-color: #ffff00;"&gt;官方網頁中的 Tutorial 與說明文件中逐步熟習各套件的特性與使用方法&lt;/span&gt;, 並且透過專題製作, 實際應用其功能 , &lt;span style="background-color: #ffff00;"&gt;解決&lt;/span&gt;過程中所面臨的各種&lt;span style="background-color: #ffff00;"&gt;問題&lt;/span&gt;.&lt;/p&gt;
+&lt;h3&gt;CP Qt Designer 教學影片&lt;/h3&gt;
+&lt;p&gt;Qt Designer Manual: &lt;a href="http://doc.qt.io/qt-5/qtdesigner-manual.html"&gt;http://doc.qt.io/qt-5/qtdesigner-manual.html&lt;/a&gt;&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/Dmo8eZG5I2w" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Layout&lt;/p&gt;
+&lt;p&gt;MainWindow&lt;/p&gt;
+&lt;p&gt;Widget&lt;/p&gt;
+&lt;p&gt;Form&lt;/p&gt;
+&lt;p&gt;Preview&lt;/p&gt;
+&lt;h3&gt;CADP Onshape 教學影片&lt;/h3&gt;
+&lt;p&gt;基本草圖繪製&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/pMWnsHpDlQE" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;零件組立&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/KmTHj5uQrjc" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;參數設計&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/zE4w59DNZHs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Sweep Tutorial&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/moNkVCULGMk" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;h3&gt;CADP V-rep 教學影片&lt;/h3&gt;
+&lt;p&gt;利用 Python 程式控制 V-rep 動態模型&lt;/p&gt;
+&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/SQont-mTnfM" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</content><category term="2017fall"></category><category term="Summary"></category></entry><entry><title>CADP 第七週線上考試</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-cadp-w7-exam.html" rel="alternate"></link><published>2017-10-20T13:00:00+08:00</published><updated>2017-10-20T13:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-10-20:/2017fall/doc/trunk/blog/kmol-cadp-w7-exam.html</id><summary type="html">&lt;p&gt;W7-W9 週為本學期期中階段的考試週, 其中第一堂課時間將要求學員直接利用教室中的電腦 ,以 ShareX 拍攝與課程相關的操作影片.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;W7-W9 週為本學期期中階段的考試週, 其中第一堂課時間將要求學員直接利用教室中的電腦 ,以 ShareX 拍攝與課程相關的操作影片.&lt;/p&gt;
 
 
