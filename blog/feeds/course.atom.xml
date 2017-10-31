@@ -1,5 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Fall CADP&amp;CP (虎尾科大MDE) - Course</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/" rel="alternate"></link><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/feeds/course.atom.xml" rel="self"></link><id>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/</id><updated>2017-10-27T13:00:00+08:00</updated><entry><title>第八週課程內容整理</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-w8-summary.html" rel="alternate"></link><published>2017-10-27T13:00:00+08:00</published><updated>2017-10-27T13:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-10-27:/2017fall/doc/trunk/blog/kmol-2017-fall-w8-summary.html</id><summary type="html">&lt;p&gt;2017 年 Fall 的課程進行到接近一半, 本週整理計算機程式與電腦輔助設計實習的課程相關內容, 說明各種工具的特性與學習重點.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Fall CADP&amp;CP (虎尾科大MDE) - Course</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/" rel="alternate"></link><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/feeds/course.atom.xml" rel="self"></link><id>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/</id><updated>2017-10-31T13:00:00+08:00</updated><entry><title>CP PyQt5 視窗程式 (一)</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-pyqt5-1.html" rel="alternate"></link><published>2017-10-31T13:00:00+08:00</published><updated>2017-10-31T13:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-10-31:/2017fall/doc/trunk/blog/kmol-2017-fall-pyqt5-1.html</id><summary type="html">&lt;p&gt;2017 年 Fall 的計算機程式課程開始導入 &lt;a href="http://pyqt.sourceforge.net/Docs/PyQt5/modules.html"&gt;PyQt5&lt;/a&gt; 視窗程式教學, 其中使用 &lt;a href="https://eric-ide.python-projects.org"&gt;Eric6&lt;/a&gt; 整合開發環境簡化初學者建立視窗表單.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;2017 年 Fall 的計算機程式課程開始導入 &lt;a href="http://pyqt.sourceforge.net/Docs/PyQt5/modules.html"&gt;PyQt5&lt;/a&gt; 視窗程式教學, 其中使用 &lt;a href="https://eric-ide.python-projects.org"&gt;Eric6&lt;/a&gt; 整合開發環境簡化初學者建立視窗表單.&lt;/p&gt;
+
+
+&lt;h3&gt;手動建立 PyQt5 視窗介面&lt;/h3&gt;
+&lt;p&gt;最簡單的 &lt;a href="http://pyqt.sourceforge.net/Docs/PyQt5/modules.html"&gt;PyQt5&lt;/a&gt; 程式直接利用 &lt;a href="http://doc.qt.io/qt-5/qtwidgets-module.html"&gt;QtWidgets&lt;/a&gt; 中的 &lt;a href="http://doc.qt.io/qt-5/qwidget.html"&gt;QWidget&lt;/a&gt; 呈現簡單的視窗, 然後利用 &lt;a href="http://doc.qt.io/qt-5/qapplication.html"&gt;QApplication&lt;/a&gt; 建立應用程式後, 以應用程式的 &lt;a href="http://doc.qt.io/qt-5/qapplication.html#exec"&gt;exec()&lt;/a&gt; 方法進入事件迴圈.&lt;/p&gt;
+&lt;pre class="brush: python"&gt;
+import sys
+from PyQt5 import QtWidgets
+
+app = QtWidgets.QApplication(sys.argv)
+win = QtWidgets.QWidget()
+win.show()
+app.exit(app.exec())
+&lt;/pre&gt;
+
+&lt;p&gt;特別注意 &lt;a href="http://pyqt.sourceforge.net/Docs/PyQt5/modules.html"&gt;PyQt5&lt;/a&gt; 模組中的 P 與 Q 為大寫, 而 &lt;a href="http://doc.qt.io/qt-5/qtwidgets-module.html"&gt;QtWidgets&lt;/a&gt; 中的 Q 與 W 為大寫, &lt;a href="http://doc.qt.io/qt-5/qapplication.html"&gt;QApplication&lt;/a&gt; 中的 Q 與 A 為大寫, 而 &lt;a href="http://doc.qt.io/qt-5/qwidget.html"&gt;QWidget&lt;/a&gt; 中的 Q 與 W 為大寫.&lt;/p&gt;
+&lt;p&gt;另外, 利用 &lt;a href="http://doc.qt.io/qt-5/qwidget.html#show"&gt;show()&lt;/a&gt; 方法將視窗元件顯示後, 其下的程式流程仍可繼續執行, 而對話框中所使用的 &lt;a href="http://doc.qt.io/qt-5/qapplication.html#exec"&gt;exec()&lt;/a&gt; 方法將會一直到使用者關閉對話框後, 才會將程式的控制權交回.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://doc.qt.io/qt-5/qtwidgets-module.html"&gt;QtWidgets&lt;/a&gt; 模組提供一組使用者介面元件 (User Interface elements), 用來建立傳統視窗桌面樣式的使用者操作介面.&lt;/p&gt;
+&lt;p&gt;事件導向的 &lt;a href="http://pyqt.sourceforge.net/Docs/PyQt5/modules.html"&gt;PyQt5&lt;/a&gt; 程式基本控制流程為:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;建立 QApplication 應用程式物件
+建立視窗元件
+顯示視窗元件
+進入應用程式執行迴圈
+等待使用者所觸發的事件
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h3&gt;以 Eric6 建立 PyQt5 視窗介面&lt;/h3&gt;
+&lt;p&gt;首先使用者必須利用可攜程式環境中的 fossil.exe 2.3 版 fossil clone https://mde1a1.kmol.info/pymcadp 倉儲, 操作指令為:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;選定要 clone 倉儲存檔的目錄, 一般建議為 y:\tmp\fossil 目錄
+更換目錄到倉儲存檔的目錄後, 執行 fossil clone https://mde1a1.kmol.info/pymcadp pymcadp.fossil
+將 pymcadp.fossil 開啟在其目錄下的 wd\pymcadp 目錄
+更換目錄到 wd\pymcadp 後, 執行 fossil open ./../../pymcadp.fossil
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;將遠端的 pymcadp 倉儲 clone 至近端後, 解開其最新版內容後, 接著就要配合 2017 Fall 的 CP 課程, 在倉儲中的 2017fall 目錄, 存放本學期隨後與課程配合的 Eric6 專案及程式碼, 各學員則配合參考 pymcadp 中的設計與配置, 在自己的倉儲中建立對應的目錄與專案內容.&lt;/p&gt;
+&lt;h4&gt;啟動 Eric6 IDE&lt;/h4&gt;
+&lt;p&gt;在隨身碟中啟動 Eric6 只要點按 start.bat 後, 在命令列中執行 eric6 即可帶出整合開發環境.&lt;/p&gt;
+&lt;p&gt;之後, 從下拉式功能表中的 Project, 以 New 建立新專案, 使用者必須設定 Project Properties 畫面如下:&lt;/p&gt;
+&lt;p&gt;&lt;img src="./../data/images/eric6_project_properties.png"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;(以上 2D 圖像表達, 採用 &lt;a href="https://getsharex.com/"&gt;ShareX&lt;/a&gt; 擷取視窗區域存成圖檔後, 以 &lt;a href="https://www.gimp.org/"&gt;GIMP&lt;/a&gt; 編輯, 利用 Rectangle Select Tool 選定要以紅線標示的三個區域後, 再透過 &lt;a href="https://www.gimp.org/"&gt;GIMP&lt;/a&gt; 的 Edit-Stroke Selection 功能, 選擇標示框線的顏色、大小與樣式)&lt;/p&gt;</content><category term="2017fall"></category><category term="PyQt5"></category></entry><entry><title>第八週課程內容整理</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-w8-summary.html" rel="alternate"></link><published>2017-10-27T13:00:00+08:00</published><updated>2017-10-27T13:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-10-27:/2017fall/doc/trunk/blog/kmol-2017-fall-w8-summary.html</id><summary type="html">&lt;p&gt;2017 年 Fall 的課程進行到接近一半, 本週整理計算機程式與電腦輔助設計實習的課程相關內容, 說明各種工具的特性與學習重點.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2017 年 Fall 的課程進行到接近一半, 本週整理計算機程式與電腦輔助設計實習的課程相關內容, 說明各種工具的特性與學習重點.&lt;/p&gt;
 
 
@@ -36,6 +78,19 @@
 &lt;p&gt;Widget&lt;/p&gt;
 &lt;p&gt;Form&lt;/p&gt;
 &lt;p&gt;Preview&lt;/p&gt;
+&lt;p&gt;一乙第八週上課教學影片:&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/240438422" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/240438422"&gt;國立虎尾科技大學機械設計工程系計算機程式 - 一乙第八週第一部分, 說明 Python 物件導向的術語及基本用法&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/240439864" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/240439864"&gt;國立虎尾科技大學機械設計工程系計算機程式 - 一乙第八週第二部分, 利用瀏覽器中的 Brython 程式環境, 練習如何使用 for 迴圈、函式與類別定義.&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/240443030" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/240443030"&gt;國立虎尾科技大學機械設計工程系計算機程式 - 一乙第八週第三部分, 說明如何利用 Eric6 IDE 建立所需的 calculator 計算機程式對話表單.&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
 &lt;h3&gt;CADP Onshape 教學影片&lt;/h3&gt;
 &lt;p&gt;基本草圖繪製&lt;/p&gt;
 &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/pMWnsHpDlQE" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
