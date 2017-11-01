@@ -24,7 +24,7 @@
 <v t="yen.20170108171733.3"><vh>@edit README.md</vh></v>
 <v t="yen.20170108171733.4"><vh>@edit .gitignore</vh></v>
 <v t="yen.20170108171733.5" a="E"><vh>Pelican 設定</vh>
-<v t="leo.20170912145121.1"><vh>近端</vh>
+<v t="leo.20170912145121.1" a="E"><vh>近端</vh>
 <v t="yen.20170108171733.6"><vh>@edit local_publishconf.py</vh></v>
 </v>
 <v t="leo.20170912145144.1" a="E"><vh>遠端</vh>
@@ -33,11 +33,11 @@
 <v t="leo.20170912145133.1"><vh>共用</vh></v>
 <v t="yen.20170108171733.7"><vh>@edit pelicanconf.py</vh></v>
 </v>
-<v t="yen.20170224232341.1"><vh>編輯 template</vh>
-<v t="yen.20170224232341.2"><vh>@path theme/pelican-bootstrap3_local/templates</vh>
+<v t="yen.20170224232341.1" a="E"><vh>編輯 template</vh>
+<v t="yen.20170224232341.2" a="E"><vh>@path theme/pelican-bootstrap3_local/templates</vh>
 <v t="yen.20170224232341.3"><vh>@edit base.html</vh></v>
 </v>
-<v t="leo.20170912210747.1"><vh>@path theme/pelican-bootstrap3/templates</vh>
+<v t="leo.20170912210747.1" a="E"><vh>@path theme/pelican-bootstrap3/templates</vh>
 <v t="leo.20170912210747.2"><vh>@edit search.html</vh></v>
 <v t="leo.20170912210747.3"><vh>@edit base.html</vh></v>
 <v t="leo.20170912210747.4"><vh>@edit article.html</vh></v>
