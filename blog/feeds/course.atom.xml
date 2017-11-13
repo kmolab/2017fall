@@ -1,5 +1,326 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Fall CADP&amp;CP (虎尾科大MDE) - Course</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/" rel="alternate"></link><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/feeds/course.atom.xml" rel="self"></link><id>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/</id><updated>2017-10-31T13:00:00+08:00</updated><entry><title>CP PyQt5 視窗程式 (一)</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-pyqt5-1.html" rel="alternate"></link><published>2017-10-31T13:00:00+08:00</published><updated>2017-10-31T13:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-10-31:/2017fall/doc/trunk/blog/kmol-2017-fall-pyqt5-1.html</id><summary type="html">&lt;p&gt;2017 年 Fall 的計算機程式課程開始導入 &lt;a href="http://pyqt.sourceforge.net/Docs/PyQt5/modules.html"&gt;PyQt5&lt;/a&gt; 視窗程式教學, 其中使用 &lt;a href="https://eric-ide.python-projects.org"&gt;Eric6&lt;/a&gt; 整合開發環境簡化初學者建立視窗表單.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Fall CADP&amp;CP (虎尾科大MDE) - Course</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/" rel="alternate"></link><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/feeds/course.atom.xml" rel="self"></link><id>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/</id><updated>2017-11-13T13:00:00+08:00</updated><entry><title>CADP PTC Creo4 電腦輔助設計套件</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-creo4-1.html" rel="alternate"></link><published>2017-11-13T13:00:00+08:00</published><updated>2017-11-13T13:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-11-13:/2017fall/doc/trunk/blog/kmol-2017-fall-creo4-1.html</id><summary type="html">&lt;p&gt;學習 PTC Creo4 的最佳初級參考資料為: &lt;a href="https://learningexchange.ptc.com/tutorials/by_product/ptc-creo/product_id:1"&gt;Creo Tutorial&lt;/a&gt; 與 &lt;a href="https://www.ptc.com/-/media/Files/PDFs/Academic/Primer_Creo_2.ashx?la=en&amp;hash=26392D3F3139C04154618BB06ED75E297DA2B2BB"&gt;Creo Parametric Primer&lt;/a&gt;.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;學習 PTC Creo4 的最佳初級參考資料為: &lt;a href="https://learningexchange.ptc.com/tutorials/by_product/ptc-creo/product_id:1"&gt;Creo Tutorial&lt;/a&gt; 與 &lt;a href="https://www.ptc.com/-/media/Files/PDFs/Academic/Primer_Creo_2.ashx?la=en&amp;hash=26392D3F3139C04154618BB06ED75E297DA2B2BB"&gt;Creo Parametric Primer&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;各學員可以在系上網路主幹上, 直接&lt;a href="https://service.mde.tw:8443/downloads/creo/PTC_creo4_portable.7z"&gt;下載可攜 PTC Creo4 套件&lt;/a&gt;  (只有系上電腦可以下載), 放入 USB 3.0 規格以上的隨身碟, 此套件將透過網路連線取得合法認證後啟動, 此一版本的有效日期: 14-sep-2018, 提供 Creo Parametric 4.0, Creo Direct 4.0 與 Creo Simulate 4.0 教育版功能.&lt;/p&gt;
+&lt;p&gt;除了系上每年更新的 PTC Creo 電腦輔助設計室教育版本外, 學員也可以至 &lt;a href="https://www.ptc.com/en/academic-program/products/free-software"&gt;申請下載免費的 Creo 學生版&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;目前一般機械設計業界使用的電腦輔助設計 3D 參數套件, 大致有中端級的 &lt;a href="http://www.solidworks.com/"&gt;Dassault Solidworks&lt;/a&gt;, &lt;a href="https://www.autodesk.com/products/inventor/overview"&gt;AutoDesk Inventor&lt;/a&gt; 與 &lt;a href="https://www.plm.automation.siemens.com/en/products/solid-edge/"&gt;Siemens Solid Edge&lt;/a&gt;, 以及高端級的 &lt;a href="https://www.ptc.com/en/products/cad/creo"&gt;PTC Creo&lt;/a&gt;, &lt;a href="https://www.plm.automation.siemens.com/en/products/nx/"&gt;Siemens NX&lt;/a&gt;, 與 &lt;a href="https://www.3ds.com/products-services/catia/"&gt;Dassault Catia&lt;/a&gt;. 其中使用最多的為 &lt;a href="http://www.solidworks.com/"&gt;Dassault Solidworks&lt;/a&gt;, 普遍認為最容易上手, 整體繪圖流程順暢, 但在多零組件與曲面設計上的表現不如 &lt;a href="https://www.ptc.com/en/products/cad/creo"&gt;PTC Creo&lt;/a&gt; 或其他高端 MCAD 套件.&lt;/p&gt;
+&lt;p&gt;由於上述各種單機版本的電腦輔助設計套件, 其安裝與版次的管理較為繁雜, 且成員間的協同設計必須仰賴 &lt;a href="https://www.plm.automation.siemens.com/en/plm/"&gt;PLM&lt;/a&gt; 系統, 因此於 2014 - 2015 年間興起的雲端 MCAD 套件 &lt;a href="https://a360.autodesk.com/"&gt;AutoDesk A360&lt;/a&gt; 與 &lt;a href="https://www.onshape.com/"&gt;Onshape&lt;/a&gt;, 已經逐步嶄露頭角, 可以在一般電腦的瀏覽器上登入使用, 也可以使用手機或平板電腦上的專用 Apps 登入帳號後, 進行協同設計.&lt;/p&gt;</content><category term="2017fall"></category><category term="Creo4"></category></entry><entry><title>CP PyQt5 視窗程式 (二)</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-pyqt5-2.html" rel="alternate"></link><published>2017-11-12T11:00:00+08:00</published><updated>2017-11-12T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-11-12:/2017fall/doc/trunk/blog/kmol-2017-fall-pyqt5-2.html</id><summary type="html">&lt;p&gt;當使用者透過 Eric6 與 Qt Designer 完成基本計算機表單的視窗對話框後, 分別使用了 Qt Designer 中的 Grid Layout、Press Button 與 Line Edit 等 Widgets.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;當使用者透過 Eric6 與 Qt Designer 完成基本計算機表單的視窗對話框後, 分別使用了 Qt Designer 中的 Grid Layout、Press Button 與 Line Edit 等 Widgets.&lt;/p&gt;
+
+
+&lt;p&gt;接下來則必須配合 Dialog.ui, 在 Eric6 的表單頁面, 在 Dialog.ui 位置以滑鼠右鍵, 指定 Generate Dialog Code, 操作畫面如下:&lt;/p&gt;
+&lt;p&gt;&lt;img class = "border" src="./../data/images/eric6_generate_dialog_code.png"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;接著點擊 New 後在 ui 目錄下, 建立 Dialog.py 檔案, 操作畫面如下:&lt;/p&gt;
+&lt;p&gt;&lt;img class = "border" src="./../data/images/eric6_generate_dialog_code2.png"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;之後與 Dialog.ui 編譯後的 Ui_Dialog.py 程式碼對應的 Dialog.py (可以自選 Generate Dialog Code 的檔案名稱 ,這裡選擇存為 Dialog.py), 將存放與對話表單相應的程式邏輯.&lt;/p&gt;
+&lt;p&gt;意即, 當用戶使用 Qt Designer 設計對話視窗表單後, 整體程式開發流程將分為 1) 以滑鼠產生對話框圖形介面與 2) 配合手動建立邏輯檔案等兩個流程, 由 Qt Designer 自動轉為 Ui_Dialog.py 程式碼的基本圖形介面建立流程, 使用者將不會手動編輯改變此一檔案的內容, 且主程式的模組導入則以手動建立的邏輯程式檔案為主.&lt;/p&gt;
+&lt;p&gt;例如: 上述位於 ui 目錄中的 Dialog.ui 編譯後, 得到 Ui_Dialog.py, 而與 Dialog.ui 對應的 Generate Dialog Code 所產生的 Dialog.py 檔案, 與主程式檔案 run.py 如下列所示:&lt;/p&gt;
+&lt;p&gt;run.py&lt;/p&gt;
+&lt;pre class="brush: python"&gt;
+# 導入 sys 模組, 主要用於 sys.argv 成員變數
+import sys
+# 從 PQt5 模組導入 QtWidgets 模組類別
+from PyQt5 import QtWidgets
+# 從 ui 目錄導入 Dialog.py, Python 程式檔案本身就是一個模組, 且文件名就是模組名
+from ui import Dialog
+
+# 每一個 Python 程式都可以直接被執行, 或者被導入其他程式中, 當成導入模組執行
+# 假如程式檔案直接被執行時, 全域變數 __name__ 就會等於 "__main__" 字串
+# 因此, 以下的判斷式的意思是, 若本檔案直接被執行時, 就會執行以下內縮程式區段
+if __name__ == "__main__":
+    # 利用 QtWidgets.QApplication 類別建立案例物件, 且以 sys.argv 作為輸入
+    app = QtWidgets.QApplication(sys.argv)
+    # 利用所導入的 Dialog 模組中的 Dialog 類別建立物件案例, 對應的變數名稱設為 win
+    win = Dialog.Dialog()
+    # 執行 win 物件中的 show() 方法, 因為所有 Qt5 部件內定為不顯示
+    win.show()
+    # 執行 app 物件的 exec() 方法, 表示進入視窗事件重複迴圈, 等待使用者滑鼠輸入
+    # 將 app.exec() 當作 sys.exit() 執行輸入, 表示使用者可以透過視窗的 x 按鈕結束執行
+    sys.exit(app.exec())
+&lt;/pre&gt;
+
+&lt;p&gt;Dialog.py 如下所示:&lt;/p&gt;
+&lt;pre class="brush: python"&gt;
+# -*- coding: utf-8 -*-
+
+"""
+Module implementing Dialog.
+"""
+
+from PyQt5.QtCore import pyqtSlot
+from PyQt5.QtWidgets import QDialog
+
+from .Ui_Dialog import Ui_Dialog
+
+
+# Dialog 類別同時繼承 QDialog 與 Ui_Dialog 類別
+class Dialog(QDialog, Ui_Dialog):
+    """
+    Class documentation goes here. (若有類別相關說明文件內容, 放在此處)
+    """
+    def __init__(self, parent=None):
+        """
+        Constructor (類別建構子)
+
+        @param parent reference to the parent widget
+        @type QWidget
+        """
+        # 利用 super 類別調用 parent 類別中的建構子
+        super(Dialog, self).__init__(parent)
+        # 上一行在 Python3 可以寫為 super().__init__()
+        # 利用 Ui_Dialog 類別中的 setupUi 方法, 以 self 視窗部件建立使用者介面
+        self.setupUi(self)
+        # 當多個 signal 同時指向同一個 slot 處理時, 採用 for loop
+        num_button = [self.one,  self.two,  \
+        self.three,  self.four,  self.five,  self.six,  self.seven,  self.eight,  self.nine,  self.zero]
+        plus_minus = [self.plus,  self.minus]
+        multiply_divide = [self.multiply,  self.divide]
+        #self.one.clicked.connect(self.number)
+        # 數字按鍵的 signal 與 slot 設定
+        for i in num_button:
+            i.clicked.connect(self.number)
+
+        # 加減鍵的 signal 與 slogt 設定
+        for i in plus_minus:
+            i.clicked.connect(self.additiveOperatorClicked)
+
+        # 等於按鍵的 signal 與 slot 設定
+        self.equal.clicked.connect(self.equalClicked)
+
+        # 乘與除按建的 signal 與 slot 設定
+        for i in multiply_divide:
+            i.clicked.connect(self.multiplicativeOperatorClicked)
+
+        # 等待運算的加或減
+        self.pendingAdditiveOperator = ''
+        self.sumSoFar = 0.0
+        # 起始時, 等待使用者輸入運算數值變數為真
+        self.waitingForOperand = True
+
+        # 加入可以處理先乘除後加減的運算時, 新增暫存在記憶體的總數, sumInMemory
+        # 以及暫存尚未完成運算的運算子 factorSoFar
+        self.sumInMemory = 0.0
+        self.factorSoFar = 0.0
+        # 等待運算的乘或除
+        self.pendingMultiplicativeOperator = ''
+
+    def number(self):
+        clickedButton = self.sender()
+        digitValue = int(clickedButton.text())
+        # when user clicks 0.0
+        if self.display.text() == '0' and digitValue == 0.0:
+            return
+
+        # if under digit input process, clear display for the very first beginning
+        # waitingForOperand 為 True 已經點按運算數值按鈕
+        if self.waitingForOperand:
+            # 清除 display 
+            self.display.clear()
+            # 將判斷是否已經點按運算數值按鈕的判斷變數重新設為  False
+            self.waitingForOperand = False
+        # 利用 setText() 設定 LineEdit 元件顯示字串, 利用 text() 取出目前所顯示的字串, 同時也可利用 text() 擷取按鈕物件上顯示的字串
+        #self.display.setText(self.display.text() + self.sender().text())
+        self.display.setText(self.display.text() + str(digitValue))
+
+    def additiveOperatorClicked(self):
+        # 確定按下加或減
+        clickedButton = self.sender()
+        # 確定運算子, 為加或減
+        clickedOperator = clickedButton.text()
+        # 點按運算子之前在 display 上的數字, 為運算數
+        operand = float(self.display.text())
+
+        # 納入乘與除之後的先乘除後加減運算邏輯
+        if self.pendingMultiplicativeOperator:
+            if not self.calculate(operand, self.pendingMultiplicativeOperator):
+                self.abortOperation()
+                return
+
+            self.display.setText(str(self.factorSoFar))
+            operand = self.factorSoFar
+            self.factorSoFar = 0.0
+            self.pendingMultiplicativeOperator = ''
+
+
+        # 假如有等待運算的加或減, 進入執行運算
+        # 若前面已經有運算數等待運算, 則執行計算
+        if self.pendingAdditiveOperator:
+            if not self.calculate(operand, self.pendingAdditiveOperator):
+                self.abortOperation()
+                return
+            # 顯示目前的運算結果
+            self.display.setText(str(self.sumSoFar))
+        else:
+            # 假如仍未進入等待運算的階段, 則將運算數與 self.fumSoFar 對應
+            self.sumSoFar = operand
+
+        self.pendingAdditiveOperator = clickedOperator
+        # 進入等待另外一個運算數值的階段, 設為 True 才會清空 LineEdit
+        self.waitingForOperand = True
+
+    def multiplicativeOperatorClicked(self):
+        clickedButton = self.sender()
+        clickedOperator = clickedButton.text()
+        operand = float(self.display.text())
+
+        if self.pendingMultiplicativeOperator:
+            if not self.calculate(operand, self.pendingMultiplicativeOperator):
+                self.abortOperation()
+                return
+
+            self.display.setText(str(self.factorSoFar))
+        else:
+            self.factorSoFar = operand
+
+        self.pendingMultiplicativeOperator = clickedOperator
+        self.waitingForOperand = True
+
+    def equalClicked(self):
+        # 從 display 取的運算數值
+        operand = float(self.display.text())
+
+        # 先乘除的運算處理
+        if self.pendingMultiplicativeOperator:
+            if not self.calculate(operand, self.pendingMultiplicativeOperator):
+                self.abortOperation()
+                return
+            # factorSoFar 為乘或除運算所得之暫存數值
+            operand = self.factorSoFar
+            self.factorSoFar = 0.0
+            self.pendingMultiplicativeOperator = ''
+
+        # 若有等待加或減的運算子, 執行運算
+        if self.pendingAdditiveOperator:
+            if not self.calculate(operand, self.pendingAdditiveOperator):
+                self.abortOperation()
+                return
+
+            self.pendingAdditiveOperator = ''
+        else:
+            self.sumSoFar = operand
+
+        self.display.setText(str(self.sumSoFar))
+        self.sumSoFar = 0.0
+        self.waitingForOperand = True
+
+    # 右運算數與等待運算子當作輸入
+    def calculate(self, rightOperand, pendingOperator):
+        # 進入計算流程時, 用目前輸入的運算數值與 self.sumSoFar 執行計算
+        if pendingOperator == "+":
+            self.sumSoFar += rightOperand
+        elif pendingOperator == "-":
+            self.sumSoFar -= rightOperand
+
+        elif pendingOperator == "*":
+            self.factorSoFar *= rightOperand
+        elif pendingOperator == "/":
+            if rightOperand == 0.0:
+                return False
+
+            self.factorSoFar /= rightOperand
+
+        return True
+&lt;/pre&gt;
+
+&lt;p&gt;各變數的說明:&lt;/p&gt;
+&lt;p&gt;sumInMemory contains the value stored in the calculator's memory (using MS, M+, or MC).&lt;/p&gt;
+&lt;p&gt;sumSoFar stores the value accumulated so far. When the user clicks =, sumSoFar is recomputed and shown on the display. Clear All resets sumSoFar to zero.&lt;/p&gt;
+&lt;p&gt;factorSoFar stores a temporary value when doing multiplications and divisions.&lt;/p&gt;
+&lt;p&gt;pendingAdditiveOperator stores the last additive operator clicked by the user.&lt;/p&gt;
+&lt;p&gt;pendingMultiplicativeOperator stores the last multiplicative operator clicked by the user.&lt;/p&gt;
+&lt;p&gt;waitingForOperand is true when the calculator is expecting the user to start typing an operand.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://doc.qt.io/qt-5/qapplication.html"&gt;QApplication&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://doc.qt.io/qt-5/qtwidgets-module.html"&gt;QtWidgets&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://doc.qt.io/qt-5/qdialog.html"&gt;QDialog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://pythonspot.com/en/pyqt5-signals-and-slots/"&gt;PyQt5 Signal and Slots&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://doc.qt.io/qt-5/qtwidgets-widgets-calculator-example.html"&gt;Qt5 計算機範例說明&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;當按下數字按鍵&lt;/h3&gt;
+&lt;p&gt;Pressing one of the calculator's digit buttons will emit the button's clicked() signal, which will trigger the number() slot.&lt;/p&gt;
+&lt;h3&gt;sender 在 Qt5 中為指標&lt;/h3&gt;
+&lt;p&gt;First, we find out which button sent the signal using QObject::sender(). This function returns the sender as a QObject pointer. Since we know that the sender is a Button object, we can safely cast the QObject. We could have used a C-style cast or a C++ static_cast&amp;lt;&amp;gt;(), but as a defensive programming technique we use a qobject_cast(). The advantage is that if the object has the wrong type, a null pointer is returned. Crashes due to null pointers are much easier to diagnose than crashes due to unsafe casts. Once we have the button, we extract the operator using QToolButton::text().&lt;/p&gt;
+&lt;h3&gt;考慮使用者按下 0 鍵&lt;/h3&gt;
+&lt;p&gt;The slot needs to consider two situations in particular. If display contains "0" and the user clicks the 0 button, it would be silly to show "00". And if the calculator is in a state where it is waiting for a new operand, the new digit is the first digit of that new operand; in that case, any result of a previous calculation must be cleared first.&lt;/p&gt;</content><category term="2017fall"></category><category term="PyQt5"></category></entry><entry><title>CADP Onshape 零組件設計繪圖 (一)</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-onshape-1.html" rel="alternate"></link><published>2017-11-02T13:00:00+08:00</published><updated>2017-11-02T13:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-11-02:/2017fall/doc/trunk/blog/kmol-2017-fall-onshape-1.html</id><summary type="html">&lt;p&gt;學習 Onshape 的最佳參考資料為: &lt;a href="https://www.onshape.com/videos"&gt;Videos Library&lt;/a&gt;, &lt;a href="https://learn.onshape.com/"&gt;Learning Center&lt;/a&gt; 與 &lt;a href="https://cad.onshape.com/FsDoc/"&gt;FeatureScript Doc&lt;/a&gt;.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;學習 Onshape 的最佳參考資料為: &lt;a href="https://www.onshape.com/videos"&gt;Videos Library&lt;/a&gt;, &lt;a href="https://learn.onshape.com/"&gt;Learning Center&lt;/a&gt; 與 &lt;a href="https://cad.onshape.com/FsDoc/"&gt;FeatureScript Doc&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;p&gt;其中, 我們將利用下列程式碼, 以各班每位學員指定兩個教學影片, 負責將內容摘要為中文, 並且將示範影片上傳至個人的 Vimeo 與  Youtube 帳號區.&lt;/p&gt;
+&lt;pre class="brush: python"&gt;
+# 從 urllib 模組中導入 urlopen
+from urllib.request import urlopen
+# 從 bs4 模組中導入 BeautirulSoup
+from bs4 import BeautifulSoup
+# 從 random 模組導入 shuffle
+from random import shuffle
+
+# 將要取出影片連結的網站 url,  放入數列中, 取名為 sources
+sources = ['https://www.onshape.com/videos/topic/tech-tips', 'https://www.onshape.com/videos/topic/intro-to-cad', 'https://www.onshape.com/videos/topic/tutorials', 'https://www.onshape.com/videos/topic/essential-training', 'https://www.onshape.com/videos/topic/drawings']
+
+#tech-tips (60)
+#intro-to-cad (26)
+#tutorials (14)
+#essential-training (6)
+#drawings (5)
+
+# 按照網頁中的影片數計算, 共有 111 部影片, 但分類中可能重複
+#print(60+26+14+6+5)
+
+# 設 links 變數與空數列對應
+links = []
+# 利用 for 迴圈一一取出各網頁的 html 後, 進行解讀
+# 只取出有 videos 與 https 連結的資料, 但避開 all 與 topic 類別連結
+for url in sources:
+    file = urlopen(url)
+    # 因為 urlopen 出來的資料為二位元檔案, 若要讀出列印
+    # 必須要先 decode() 為字串
+    #print(file.read().decode())
+    # 使用 html 解讀各連結的網頁內容
+    soup = BeautifulSoup(file, 'html.parser')
+    # 利用 Beautifulsoup 物件中的 find_all 方法尋找 anchor
+    for link in soup.find_all('a', href=True):
+        # 從各 anchor 資料篩選所需的影片連結
+        if ('videos' or 'https') in link['href']:
+            if 'all' not in link['href']:
+                if 'topic' not in link['href']:
+                    links.append(link['href'])
+
+# 為避免列出重複資料, 將數列轉為集合後, 再轉回數列
+video_list = list(set(links))
+shuffle(video_list)
+r_video_list = list(reversed(video_list))
+# 逐一列出所取得的影片連結
+#for i in range(len(video_list)):
+    #print(i+1, video_list[i])
+#讀取兩班學員學號名單
+with open('2a_student_list.txt') as f:
+    a_stud_list = f.read().splitlines()
+f.closed
+#print(a_stud_list )
+# 每人取兩個影片, 一個從最前面取, 一個反向取連結
+
+print("甲班 Onshape 影片分配名單:")
+print()
+for i in range(len(a_stud_list)):
+    print("  *  "+str(a_stud_list[i]))
+    print("  *  ["+str(video_list[i])+"]")
+    print("  *  ["+str(r_video_list[i])+"]")
+
+with open('2b_student_list.txt') as f:
+    b_stud_list = f.read().splitlines()
+f.closed
+
+print()
+print("乙班 Onshape 影片分配名單:")
+print()
+for i in range(len(b_stud_list)):
+    print("  *  "+str(b_stud_list[i]))
+    print("  *  ["+str(video_list[i])+"]")
+    print("  *  ["+str(r_video_list[i])+"]")
+#print(b_stud_list )
+&lt;/pre&gt;
+
+&lt;p&gt;登入 Onshape 後, 首先必須利用左上方的 Document Menu-Workspace units 選擇繪圖單位, 選擇 length unit 與 mass unit.&lt;/p&gt;</content><category term="2017fall"></category><category term="Onshape"></category></entry><entry><title>CP PyQt5 視窗程式 (一)</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-pyqt5-1.html" rel="alternate"></link><published>2017-10-31T13:00:00+08:00</published><updated>2017-10-31T13:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-10-31:/2017fall/doc/trunk/blog/kmol-2017-fall-pyqt5-1.html</id><summary type="html">&lt;p&gt;2017 年 Fall 的計算機程式課程開始導入 &lt;a href="http://pyqt.sourceforge.net/Docs/PyQt5/modules.html"&gt;PyQt5&lt;/a&gt; 視窗程式教學, 其中使用 &lt;a href="https://eric-ide.python-projects.org"&gt;Eric6&lt;/a&gt; 整合開發環境簡化初學者建立視窗表單.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2017 年 Fall 的計算機程式課程開始導入 &lt;a href="http://pyqt.sourceforge.net/Docs/PyQt5/modules.html"&gt;PyQt5&lt;/a&gt; 視窗程式教學, 其中使用 &lt;a href="https://eric-ide.python-projects.org"&gt;Eric6&lt;/a&gt; 整合開發環境簡化初學者建立視窗表單.&lt;/p&gt;
 
 
@@ -56,7 +377,7 @@ app.exit(app.exec())
 &lt;p&gt;表單頁面如下:&lt;/p&gt;
 &lt;p&gt;&lt;img class = "border" src="./../data/images/eric6_forms_tab.png"&gt;&lt;/img&gt;&lt;/p&gt;
 &lt;p&gt;選擇表單頁面後, 以滑鼠右鍵新增表單:&lt;/p&gt;
-&lt;p&gt;&lt;img class = "border" src="./../data/images/eric6_new_form.png"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class = "border" src="./../data/images/eric6_new_form.png"&gt;&lt;/img&gt; &lt;br /&gt;(圖檔以 &lt;a href="https://getsharex.com/"&gt;ShareX&lt;/a&gt; 取 screenshot 後, 以 &lt;a href="https://www.gimp.org/"&gt;Gimp&lt;/a&gt; 加入紅色框線後, 以 &lt;a href="https://sourceforge.net/projects/dia-installer/"&gt;Dia&lt;/a&gt; 加入指向曲線與標註文字)&lt;/p&gt;
 &lt;p&gt;計算機使用的表單為 Dialog:&lt;/p&gt;
 &lt;p&gt;&lt;img class = "border" src="./../data/images/eric6_new_form_dialog.png"&gt;&lt;/img&gt;&lt;/p&gt;
 &lt;p&gt;將表單相關檔案存入新增的目錄中:&lt;/p&gt;
