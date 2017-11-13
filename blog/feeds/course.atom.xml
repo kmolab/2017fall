@@ -10,6 +10,10 @@
 </summary><content type="html">&lt;p&gt;當使用者透過 Eric6 與 Qt Designer 完成基本計算機表單的視窗對話框後, 分別使用了 Qt Designer 中的 Grid Layout、Press Button 與 Line Edit 等 Widgets.&lt;/p&gt;
 
 
+&lt;iframe src="https://player.vimeo.com/video/242529543" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/242529543"&gt;國立虎尾科技大學機械設計工程系計算機程式 - 一乙第十週第二部分, 說明如何利用 Eric6 建立簡單的計算機程式, 包含利用  Qt Designer 建立對話框, 並建立透過主程式引用執行.&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
 &lt;p&gt;接下來則必須配合 Dialog.ui, 在 Eric6 的表單頁面, 在 Dialog.ui 位置以滑鼠右鍵, 指定 Generate Dialog Code, 操作畫面如下:&lt;/p&gt;
 &lt;p&gt;&lt;img class = "border" src="./../data/images/eric6_generate_dialog_code.png"&gt;&lt;/img&gt;&lt;/p&gt;
 &lt;p&gt;接著點擊 New 後在 ui 目錄下, 建立 Dialog.py 檔案, 操作畫面如下:&lt;/p&gt;
@@ -323,6 +327,10 @@ for i in range(len(b_stud_list)):
 &lt;p&gt;登入 Onshape 後, 首先必須利用左上方的 Document Menu-Workspace units 選擇繪圖單位, 選擇 length unit 與 mass unit.&lt;/p&gt;</content><category term="2017fall"></category><category term="Onshape"></category></entry><entry><title>CP PyQt5 視窗程式 (一)</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-pyqt5-1.html" rel="alternate"></link><published>2017-10-31T13:00:00+08:00</published><updated>2017-10-31T13:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-10-31:/2017fall/doc/trunk/blog/kmol-2017-fall-pyqt5-1.html</id><summary type="html">&lt;p&gt;2017 年 Fall 的計算機程式課程開始導入 &lt;a href="http://pyqt.sourceforge.net/Docs/PyQt5/modules.html"&gt;PyQt5&lt;/a&gt; 視窗程式教學, 其中使用 &lt;a href="https://eric-ide.python-projects.org"&gt;Eric6&lt;/a&gt; 整合開發環境簡化初學者建立視窗表單.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;2017 年 Fall 的計算機程式課程開始導入 &lt;a href="http://pyqt.sourceforge.net/Docs/PyQt5/modules.html"&gt;PyQt5&lt;/a&gt; 視窗程式教學, 其中使用 &lt;a href="https://eric-ide.python-projects.org"&gt;Eric6&lt;/a&gt; 整合開發環境簡化初學者建立視窗表單.&lt;/p&gt;
 
+
+&lt;iframe src="https://player.vimeo.com/video/242527163" width="640" height="512" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/242527163"&gt;國立虎尾科技大學機械設計工程系計算機程式 - 一乙第十週第一部分, 說明如何客製化可攜程式系統, 直接以 start.bat 開啟 Leo Editor, 並開啟內定的專案檔&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3&gt;手動建立 PyQt5 視窗介面&lt;/h3&gt;
 &lt;p&gt;最簡單的 &lt;a href="http://pyqt.sourceforge.net/Docs/PyQt5/modules.html"&gt;PyQt5&lt;/a&gt; 程式直接利用 &lt;a href="http://doc.qt.io/qt-5/qtwidgets-module.html"&gt;QtWidgets&lt;/a&gt; 中的 &lt;a href="http://doc.qt.io/qt-5/qwidget.html"&gt;QWidget&lt;/a&gt; 呈現簡單的視窗, 然後利用 &lt;a href="http://doc.qt.io/qt-5/qapplication.html"&gt;QApplication&lt;/a&gt; 建立應用程式後, 以應用程式的 &lt;a href="http://doc.qt.io/qt-5/qapplication.html#exec"&gt;exec()&lt;/a&gt; 方法進入事件迴圈.&lt;/p&gt;
