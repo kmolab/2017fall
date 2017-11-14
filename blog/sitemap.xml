@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/</loc>
-<lastmod>2017-11-13T21:01:05-00:00</lastmod>
+<lastmod>2017-11-14T12:47:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/archives.html</loc>
-<lastmod>2017-11-13T21:01:05-00:00</lastmod>
+<lastmod>2017-11-14T12:47:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tags.html</loc>
-<lastmod>2017-11-13T21:01:05-00:00</lastmod>
+<lastmod>2017-11-14T12:47:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/categories.html</loc>
-<lastmod>2017-11-13T21:01:05-00:00</lastmod>
+<lastmod>2017-11-14T12:47:59-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -34,6 +34,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/pages/about/</loc>
 <lastmod>2017-09-23T21:52:29+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-cadp-fourbar-three-position-synthesis.html</loc>
+<lastmod>2017-11-14T11:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -201,14 +208,35 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/category/course.html</loc>
-<lastmod>2017-11-13T13:00:00+08:06</lastmod>
+<lastmod>2017-11-14T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tag/2017fall.html</loc>
-<lastmod>2017-11-13T13:00:00+08:06</lastmod>
+<lastmod>2017-11-14T11:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tag/cadp.html</loc>
+<lastmod>2017-11-14T11:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tag/fourbar.html</loc>
+<lastmod>2017-11-14T11:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tag/synthesis.html</loc>
+<lastmod>2017-11-14T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -237,13 +265,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tag/summary.html</loc>
 <lastmod>2017-10-27T13:00:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tag/cadp.html</loc>
-<lastmod>2017-10-20T13:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -341,7 +362,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/author/yen.html</loc>
-<lastmod>2017-11-13T13:00:00+08:06</lastmod>
+<lastmod>2017-11-14T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
