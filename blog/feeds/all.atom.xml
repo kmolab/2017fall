@@ -95,9 +95,9 @@ print(N(perL24.intersection(perL46)[0], 3))
 &lt;h3&gt;Arduino 伺服馬達控制設計&lt;/h3&gt;
 &lt;p&gt;伺服馬達控制模擬&lt;/p&gt;
 &lt;p&gt;為了在實體 Arduino Uno 控制板連線操作之前, 可以利用網際 Auduino 控制板與電子元件系統進行模擬, 請各學員至 https://www.tinkercad.com 登記帳號, 登入後選擇左上角的 TinkerCAD 標誌連結後, 選擇 Circuits 進入電路設計與模擬, 操作畫面如下圖所示:&lt;/p&gt;
-&lt;p&gt;&lt;img src="./../data/images/circuits_on_tinkercad.png"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="border" src="./../data/images/circuits_on_tinkercad.png"&gt;&lt;/img&gt;&lt;/p&gt;
 &lt;p&gt;接著選擇 Arudino Uno 控制板與 Servo Motor, 然後接上電源與地線, 並將控制訊號接到 Auduino Uno 控制板的 PWM pin 9, 利用 Code Editor 納入下列 Arduino 程式, 再利用 upload and run 將程式編譯後上傳到虛擬的 Arduino Uno 控制板上執行, 就可以模擬 Servo Motor 持續左右各旋轉 180 度. 操作畫面如下圖所示: &lt;/p&gt;
-&lt;p&gt;&lt;img src="./../data/images/arduino_uno_servo_on_tinkercad.png"&gt;&lt;/img&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img class="border" src="./../data/images/arduino_uno_servo_on_tinkercad.png"&gt;&lt;/img&gt;&lt;/p&gt;
 &lt;h3&gt;實體 Arduino Servo Motor Control&lt;/h3&gt;
 &lt;p&gt;完成上述以 TinkerCAD 模擬伺服馬達的接線與程式執行之後, 接著操作實體 Arduino 控制板與 Servo Motor 的控制, 首先利用電腦驅動 Arduino 控制板, 然後再利用板子上的脈衝寬度調變 (PWM, Pulse Width Modulation) 訊號控制伺服馬達, 之後再利用傳動機構與資訊控制介面, 製作所需的機電資整合系統. 電子電機系統除了可以方便感測各種物理化學量外, 還能夠快速傳遞感測與命令訊號, 而機械系統則透過機構元件的組合, 扮演傳遞功率致動或抵抗外力撞擊與疲勞破壞的角色, 至於資訊系統則用來整合各種資訊, 用更友善的人機介面, 讓使用者更有效能地運用機電資系統產品.&lt;/p&gt;
 &lt;p&gt;&lt;a href="https://service.mde.tw/public/arduino-1.8.4-windows.zip"&gt;https://service.mde.tw/public/arduino-1.8.4-windows.zip&lt;/a&gt; 下載&lt;/p&gt;
