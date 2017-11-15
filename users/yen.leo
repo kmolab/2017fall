@@ -13,7 +13,6 @@
 <v t="yen.20170108171605.2"><vh>@data qt-gui-plugin-style-sheet</vh></v>
 <v t="yen.20170108171605.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 </v>
-<v t="yen.20170108171622.1"><vh>有關 2017fall CADP &amp; CP</vh></v>
 <v t="yen.20170108171733.1" a="E"><vh>@path ../</vh>
 <v t="leo.20170912150642.1" a="E"><vh>近端無 disqus</vh>
 <v t="yen.20170108171733.2"><vh>@button pelican-blog</vh></v>
@@ -173,6 +172,7 @@
 <v t="leo.20171112201915.1"><vh>@edit 20171112.md</vh></v>
 <v t="leo.20171113074703.1"><vh>@edit 20171113.md</vh></v>
 <v t="leo.20171114102922.1"><vh>@edit 20171114.md</vh></v>
+<v t="leo.20171115072812.1"><vh>@edit 20171115.md</vh></v>
 <v t="yen.20170108171733.81"><vh>@path pages</vh>
 <v t="yen.20170108171733.82"><vh>@edit pages_1.md</vh></v>
 </v>
@@ -181,7 +181,10 @@
 </v>
 <v t="yen.20170108171930.1"><vh>@button https server</vh></v>
 <v t="yen.20170108171939.1"><vh>@button ipv6 https server</vh></v>
-<v t="leo.20170924230247.1"><vh>PyQt5 and OpenGL</vh></v>
+<v t="leo.20170924230247.1"><vh>PyQt5 and OpenGL</vh>
+<v t="leo.20171114221330.1"><vh>PyQt5 與 Serial</vh></v>
+</v>
+<v t="leo.20171114221848.1"><vh>PyQt5 animation</vh></v>
 </vnodes>
 <tnodes>
 <t tx="leo.20170911090052.1">&lt;section data-markdown&gt;
@@ -1343,6 +1346,733 @@ Jansen 多連桿機構尺寸圖:
 * 內容管理與展示: Leo Editor + Pelican Blog + Reveal.js
 
 </t>
+<t tx="leo.20171114221330.1"># -*- coding: utf-8 -*-
+'''
+# python -m pip instatll serial pyserial
+
+# http://icodding.blogspot.tw/2016/05/python-pyserial.html
+# http://embeddedlaboratory.blogspot.tw/2017/04/design-gui-in-python-using-pyqt5.html
+# https://media.readthedocs.org/pdf/pyserial/latest/pyserial.pdf
+
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'D:\pyqt_file\untitled_2.ui'
+#
+# Created: Sat Apr 15 09:51:16 2017
+#      by: PyQt5 UI code generator 5.4
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(579, 369)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.groupBox = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox.setGeometry(QtCore.QRect(10, 10, 141, 311))
+        self.groupBox.setObjectName("groupBox")
+        self.label = QtWidgets.QLabel(self.groupBox)
+        self.label.setGeometry(QtCore.QRect(10, 20, 31, 16))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.groupBox)
+        self.label_2.setGeometry(QtCore.QRect(10, 50, 41, 16))
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.groupBox)
+        self.label_3.setGeometry(QtCore.QRect(10, 110, 41, 16))
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.groupBox)
+        self.label_4.setGeometry(QtCore.QRect(10, 80, 41, 16))
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.groupBox)
+        self.label_5.setGeometry(QtCore.QRect(10, 140, 41, 16))
+        self.label_5.setObjectName("label_5")
+        self.comboBox_4 = QtWidgets.QComboBox(self.groupBox)
+        self.comboBox_4.setGeometry(QtCore.QRect(60, 20, 71, 22))
+        self.comboBox_4.setObjectName("comboBox_4")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.lineEdit_3 = QtWidgets.QLineEdit(self.groupBox)
+        self.lineEdit_3.setGeometry(QtCore.QRect(60, 50, 71, 20))
+        self.lineEdit_3.setObjectName("lineEdit_3")
+        self.comboBox = QtWidgets.QComboBox(self.groupBox)
+        self.comboBox.setGeometry(QtCore.QRect(60, 80, 71, 22))
+        self.comboBox.setObjectName("comboBox")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox_2 = QtWidgets.QComboBox(self.groupBox)
+        self.comboBox_2.setGeometry(QtCore.QRect(60, 110, 71, 22))
+        self.comboBox_2.setObjectName("comboBox_2")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_3 = QtWidgets.QComboBox(self.groupBox)
+        self.comboBox_3.setGeometry(QtCore.QRect(60, 140, 71, 22))
+        self.comboBox_3.setObjectName("comboBox_3")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.pushButton = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton.setGeometry(QtCore.QRect(10, 240, 51, 23))
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_2 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_2.setGeometry(QtCore.QRect(80, 240, 51, 23))
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_3 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_3.setGeometry(QtCore.QRect(40, 200, 61, 23))
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.label_11 = QtWidgets.QLabel(self.groupBox)
+        self.label_11.setGeometry(QtCore.QRect(10, 170, 41, 16))
+        self.label_11.setObjectName("label_11")
+        self.label_12 = QtWidgets.QLabel(self.groupBox)
+        self.label_12.setGeometry(QtCore.QRect(70, 170, 54, 16))
+        font = QtGui.QFont()
+        font.setFamily("Aharoni")
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_12.setFont(font)
+        self.label_12.setObjectName("label_12")
+        self.groupBox_2 = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox_2.setGeometry(QtCore.QRect(160, 10, 411, 181))
+        self.groupBox_2.setObjectName("groupBox_2")
+        self.textBrowser = QtWidgets.QTextBrowser(self.groupBox_2)
+        self.textBrowser.setGeometry(QtCore.QRect(10, 20, 391, 151))
+        self.textBrowser.setObjectName("textBrowser")
+        self.groupBox_3 = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox_3.setGeometry(QtCore.QRect(160, 200, 261, 121))
+        self.groupBox_3.setObjectName("groupBox_3")
+        self.textEdit = QtWidgets.QTextEdit(self.groupBox_3)
+        self.textEdit.setGeometry(QtCore.QRect(10, 20, 241, 91))
+        self.textEdit.setObjectName("textEdit")
+        self.checkBox = QtWidgets.QCheckBox(self.centralwidget)
+        self.checkBox.setGeometry(QtCore.QRect(430, 210, 61, 16))
+        self.checkBox.setObjectName("checkBox")
+        self.checkBox_2 = QtWidgets.QCheckBox(self.centralwidget)
+        self.checkBox_2.setGeometry(QtCore.QRect(500, 210, 61, 20))
+        self.checkBox_2.setObjectName("checkBox_2")
+        self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_4.setGeometry(QtCore.QRect(430, 240, 61, 23))
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.pushButton_5 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_5.setGeometry(QtCore.QRect(430, 280, 61, 23))
+        self.pushButton_5.setObjectName("pushButton_5")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 579, 23))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        MainWindow.setFixedSize(MainWindow.width(), MainWindow.height());  
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "Serial_gui"))
+        self.groupBox.setTitle(_translate("MainWindow", "串口设置"))
+        self.label.setText(_translate("MainWindow", "串 口"))
+        self.label_2.setText(_translate("MainWindow", "波特率"))
+        self.label_3.setText(_translate("MainWindow", "校验位"))
+        self.label_4.setText(_translate("MainWindow", "数据位"))
+        self.label_5.setText(_translate("MainWindow", "停止位"))
+        self.lineEdit_3.setText(_translate("MainWindow", "9600"))
+        self.comboBox.setItemText(0, _translate("MainWindow", "8"))
+        self.comboBox.setItemText(1, _translate("MainWindow", "7"))
+        self.comboBox.setItemText(2, _translate("MainWindow", "6"))
+        self.comboBox.setItemText(3, _translate("MainWindow", "5"))
+        self.comboBox_2.setItemText(0, _translate("MainWindow", "N"))
+        self.comboBox_2.setItemText(1, _translate("MainWindow", "E"))
+        self.comboBox_2.setItemText(2, _translate("MainWindow", "O"))
+        self.comboBox_2.setItemText(3, _translate("MainWindow", "M"))
+        self.comboBox_2.setItemText(4, _translate("MainWindow", "S"))
+        self.comboBox_3.setItemText(0, _translate("MainWindow", "1"))
+        self.comboBox_3.setItemText(1, _translate("MainWindow", "1.5"))
+        self.comboBox_3.setItemText(2, _translate("MainWindow", "2"))
+        self.comboBox_4.setItemText(0, _translate("MainWindow", "COM1"))
+        self.comboBox_4.setItemText(1, _translate("MainWindow", "COM2"))
+        self.comboBox_4.setItemText(2, _translate("MainWindow", "COM3"))
+        self.comboBox_4.setItemText(3, _translate("MainWindow", "COM4"))
+        self.comboBox_4.setItemText(4, _translate("MainWindow", "COM5"))
+        self.comboBox_4.setItemText(5, _translate("MainWindow", "COM6"))
+        self.comboBox_4.setItemText(6, _translate("MainWindow", "COM7"))
+        self.comboBox_4.setItemText(7, _translate("MainWindow", "COM8"))
+        self.comboBox_4.setItemText(8, _translate("MainWindow", "COM9"))
+        self.comboBox_4.setItemText(9, _translate("MainWindow", "COM10"))
+        self.pushButton.setText(_translate("MainWindow", "打开"))     
+        self.pushButton_2.setText(_translate("MainWindow", "关闭"))   
+        self.pushButton_3.setText(_translate("MainWindow", "检测串口"))     
+        self.label_11.setText(_translate("MainWindow", "状 态："))
+        self.label_12.setText(_translate("MainWindow", "串口状态"))
+        self.groupBox_2.setTitle(_translate("MainWindow", "接收区"))
+        self.groupBox_3.setTitle(_translate("MainWindow", "发送区"))
+        self.checkBox.setText(_translate("MainWindow", "Hex显示"))
+        self.checkBox_2.setText(_translate("MainWindow", "Hex发送"))
+        self.pushButton_4.setText(_translate("MainWindow", "清除"))   
+        self.pushButton_5.setText(_translate("MainWindow", "发送"))
+'''
+import sys
+import serial
+import threading
+import binascii 
+from PyQt5 import QtCore, QtGui, QtWidgets
+import serial.tools.list_ports
+
+class Ui_MainWindow(object):
+    ser = serial.Serial()
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(579, 369)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.groupBox = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox.setGeometry(QtCore.QRect(10, 10, 141, 311))
+        self.groupBox.setObjectName("groupBox")
+        self.label = QtWidgets.QLabel(self.groupBox)
+        self.label.setGeometry(QtCore.QRect(10, 20, 31, 16))
+        self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(self.groupBox)
+        self.label_2.setGeometry(QtCore.QRect(10, 50, 41, 16))
+        self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(self.groupBox)
+        self.label_3.setGeometry(QtCore.QRect(10, 110, 41, 16))
+        self.label_3.setObjectName("label_3")
+        self.label_4 = QtWidgets.QLabel(self.groupBox)
+        self.label_4.setGeometry(QtCore.QRect(10, 80, 41, 16))
+        self.label_4.setObjectName("label_4")
+        self.label_5 = QtWidgets.QLabel(self.groupBox)
+        self.label_5.setGeometry(QtCore.QRect(10, 140, 41, 16))
+        self.label_5.setObjectName("label_5")
+        self.comboBox_4 = QtWidgets.QComboBox(self.groupBox)
+        self.comboBox_4.setGeometry(QtCore.QRect(60, 20, 71, 22))
+        self.comboBox_4.setObjectName("comboBox_4")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.comboBox_4.addItem("")
+        self.lineEdit_3 = QtWidgets.QLineEdit(self.groupBox)
+        self.lineEdit_3.setGeometry(QtCore.QRect(60, 50, 71, 20))
+        self.lineEdit_3.setObjectName("lineEdit_3")
+        self.comboBox = QtWidgets.QComboBox(self.groupBox)
+        self.comboBox.setGeometry(QtCore.QRect(60, 80, 71, 22))
+        self.comboBox.setObjectName("comboBox")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox.addItem("")
+        self.comboBox_2 = QtWidgets.QComboBox(self.groupBox)
+        self.comboBox_2.setGeometry(QtCore.QRect(60, 110, 71, 22))
+        self.comboBox_2.setObjectName("comboBox_2")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_2.addItem("")
+        self.comboBox_3 = QtWidgets.QComboBox(self.groupBox)
+        self.comboBox_3.setGeometry(QtCore.QRect(60, 140, 71, 22))
+        self.comboBox_3.setObjectName("comboBox_3")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.comboBox_3.addItem("")
+        self.pushButton = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton.setGeometry(QtCore.QRect(10, 240, 51, 23))
+        self.pushButton.setObjectName("pushButton")
+        self.pushButton_2 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_2.setGeometry(QtCore.QRect(80, 240, 51, 23))
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_3 = QtWidgets.QPushButton(self.groupBox)
+        self.pushButton_3.setGeometry(QtCore.QRect(40, 200, 61, 23))
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.label_11 = QtWidgets.QLabel(self.groupBox)
+        self.label_11.setGeometry(QtCore.QRect(10, 170, 41, 16))
+        self.label_11.setObjectName("label_11")
+        self.label_12 = QtWidgets.QLabel(self.groupBox)
+        self.label_12.setGeometry(QtCore.QRect(70, 170, 54, 16))
+        font = QtGui.QFont()
+        font.setFamily("Aharoni")
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_12.setFont(font)
+        self.label_12.setObjectName("label_12")
+        self.groupBox_2 = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox_2.setGeometry(QtCore.QRect(160, 10, 411, 181))
+        self.groupBox_2.setObjectName("groupBox_2")
+        self.textBrowser = QtWidgets.QTextBrowser(self.groupBox_2)
+        self.textBrowser.setGeometry(QtCore.QRect(10, 20, 391, 151))
+        self.textBrowser.setObjectName("textBrowser")
+        self.groupBox_3 = QtWidgets.QGroupBox(self.centralwidget)
+        self.groupBox_3.setGeometry(QtCore.QRect(160, 200, 261, 121))
+        self.groupBox_3.setObjectName("groupBox_3")
+        self.textEdit = QtWidgets.QTextEdit(self.groupBox_3)
+        self.textEdit.setGeometry(QtCore.QRect(10, 20, 241, 91))
+        self.textEdit.setObjectName("textEdit")
+        self.checkBox = QtWidgets.QCheckBox(self.centralwidget)
+        self.checkBox.setGeometry(QtCore.QRect(430, 210, 61, 16))
+        self.checkBox.setObjectName("checkBox")
+        self.checkBox_2 = QtWidgets.QCheckBox(self.centralwidget)
+        self.checkBox_2.setGeometry(QtCore.QRect(500, 210, 61, 20))
+        self.checkBox_2.setObjectName("checkBox_2")
+        self.pushButton_4 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_4.setGeometry(QtCore.QRect(430, 240, 61, 23))
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.pushButton_5 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_5.setGeometry(QtCore.QRect(430, 280, 61, 23))
+        self.pushButton_5.setObjectName("pushButton_5")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 579, 23))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+
+        MainWindow.setFixedSize(MainWindow.width(), MainWindow.height());  
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "Serial_gui"))
+        self.groupBox.setTitle(_translate("MainWindow", "串口设置"))
+        self.label.setText(_translate("MainWindow", "串 口"))
+        self.label_2.setText(_translate("MainWindow", "波特率"))
+        self.label_3.setText(_translate("MainWindow", "校验位"))
+        self.label_4.setText(_translate("MainWindow", "数据位"))
+        self.label_5.setText(_translate("MainWindow", "停止位"))
+        self.lineEdit_3.setText(_translate("MainWindow", "9600"))
+        self.comboBox.setItemText(0, _translate("MainWindow", "8"))
+        self.comboBox.setItemText(1, _translate("MainWindow", "7"))
+        self.comboBox.setItemText(2, _translate("MainWindow", "6"))
+        self.comboBox.setItemText(3, _translate("MainWindow", "5"))
+        self.comboBox_2.setItemText(0, _translate("MainWindow", "N"))
+        self.comboBox_2.setItemText(1, _translate("MainWindow", "E"))
+        self.comboBox_2.setItemText(2, _translate("MainWindow", "O"))
+        self.comboBox_2.setItemText(3, _translate("MainWindow", "M"))
+        self.comboBox_2.setItemText(4, _translate("MainWindow", "S"))
+        self.comboBox_3.setItemText(0, _translate("MainWindow", "1"))
+        self.comboBox_3.setItemText(1, _translate("MainWindow", "1.5"))
+        self.comboBox_3.setItemText(2, _translate("MainWindow", "2"))
+        self.comboBox_4.setItemText(0, _translate("MainWindow", "COM1"))
+        self.comboBox_4.setItemText(1, _translate("MainWindow", "COM2"))
+        self.comboBox_4.setItemText(2, _translate("MainWindow", "COM3"))
+        self.comboBox_4.setItemText(3, _translate("MainWindow", "COM4"))
+        self.comboBox_4.setItemText(4, _translate("MainWindow", "COM5"))
+        self.comboBox_4.setItemText(5, _translate("MainWindow", "COM6"))
+        self.comboBox_4.setItemText(6, _translate("MainWindow", "COM7"))
+        self.comboBox_4.setItemText(7, _translate("MainWindow", "COM8"))
+        self.comboBox_4.setItemText(8, _translate("MainWindow", "COM9"))
+        self.comboBox_4.setItemText(9, _translate("MainWindow", "COM10"))
+        self.pushButton.setText(_translate("MainWindow", "打开"))
+        self.pushButton.clicked.connect(self.port_open)
+
+        self.pushButton_2.setText(_translate("MainWindow", "关闭"))
+        self.pushButton_2.clicked.connect(self.port_close)
+
+        self.pushButton_3.setText(_translate("MainWindow", "检测串口"))
+        self.pushButton_3.clicked.connect(self.port_cheak)
+
+        self.label_11.setText(_translate("MainWindow", "状 态："))
+        self.label_12.setText(_translate("MainWindow", "串口状态"))
+        self.groupBox_2.setTitle(_translate("MainWindow", "接收区"))
+        self.groupBox_3.setTitle(_translate("MainWindow", "发送区"))
+        self.checkBox.setText(_translate("MainWindow", "Hex显示"))
+        self.checkBox_2.setText(_translate("MainWindow", "Hex发送"))
+        self.pushButton_4.setText(_translate("MainWindow", "清除"))
+        self.pushButton_4.clicked.connect(self.clean_data)
+
+        self.pushButton_5.setText(_translate("MainWindow", "发送"))
+        self.pushButton_5.clicked.connect(self.send_data)
+
+    def port_open(self):
+
+        self.ser.port = self.comboBox_4.currentText()
+        self.ser.baudrate = int(self.lineEdit_3.text())
+        self.ser.bytesize = int(self.comboBox.currentText()) 
+        self.ser.stopbits = int(self.comboBox_3.currentText())
+        self.ser.parity = self.comboBox_2.currentText()
+        self.ser.open()
+        if(self.ser.isOpen()):
+            self.pushButton.setEnabled(False)
+            self.label_12.setText("打开成功")
+            self.t1 = threading.Thread(target=self.receive_data)
+            self.t1.setDaemon(True)
+            self.t1.start()
+        else:
+            self.label_12.setText("打开失败")
+
+    def port_close(self):
+        self.ser.close()
+        if(self.ser.isOpen()):
+            self.label_12.setText("关闭失败")
+        else:
+            self.pushButton.setEnabled(True)
+            self.label_12.setText("关闭成功")
+
+
+    def send_data(self):
+        if(self.ser.isOpen()):
+            if(self.checkBox_2.isChecked()):
+                 self.ser.write(binascii.a2b_hex(self.textEdit.toPlainText()))
+            else:
+                self.ser.write(self.textEdit.toPlainText().encode('utf-8'))
+            self.label_12.setText("发送成功")
+    #       self.ser.flushOutput()
+        else:
+            self.label_12.setText("发送失败")
+
+    def receive_data(self):
+        print("The receive_data threading is start")
+        res_data = '' 
+        num = 0
+        while (self.ser.isOpen()):
+            size = self.ser.inWaiting()
+            if size:
+                res_data = self.ser.read_all()
+                if(self.checkBox.isChecked()):
+                    self.textBrowser.append(binascii.b2a_hex(res_data).decode())
+                else:
+                    self.textBrowser.append(res_data.decode())
+                self.textBrowser.moveCursor(QtGui.QTextCursor.End)
+                self.ser.flushInput()               
+                num +=1
+                self.label_12.setText("接收："+str(num))
+
+    def clean_data(self):
+        self.textBrowser.setText("")
+        self.label_12.setText("接收清空")
+
+    def port_cheak(self):
+        Com_List=[]
+        port_list = list(serial.tools.list_ports.comports())
+        self.comboBox_4.clear()
+        for port in port_list:
+            Com_List.append(port[0])
+            self.comboBox_4.addItem(port[0])
+        if(len(Com_List) == 0):
+            self.label_12.setText("没串口")
+
+
+if __name__ == '__main__':
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow) 
+
+
+    MainWindow.show()
+    sys.exit(app.exec_()) 
+    </t>
+<t tx="leo.20171114221848.1">#!/usr/bin/env python
+
+from PyQt5.QtCore import (QEasingCurve, QFileInfo, QLineF, QMimeData,
+        QParallelAnimationGroup, QPoint, QPointF, QPropertyAnimation, qrand,
+        QRectF, qsrand, Qt, QTime)
+from PyQt5.QtGui import (QBrush, QColor, QDrag, QImage, QPainter, QPen,
+        QPixmap, QTransform)
+from PyQt5.QtWidgets import (QApplication, QGraphicsItem, QGraphicsObject,
+        QGraphicsScene, QGraphicsView)
+
+
+class ColorItem(QGraphicsItem):
+    n = 0
+
+    def __init__(self):
+        # 針對父類別初始化
+        super(ColorItem, self).__init__()
+
+        self.color = QColor(qrand() % 256, qrand() % 256, qrand() % 256)
+
+        self.setToolTip(
+            "QColor(%d, %d, %d)\nClick and drag this color onto the robot!" % 
+              (self.color.red(), self.color.green(), self.color.blue())
+        )
+        self.setCursor(Qt.OpenHandCursor)
+        
+        self.setAcceptedMouseButtons(Qt.LeftButton)
+    
+    def boundingRect(self):
+        return QRectF(-15.5, -15.5, 34, 34)
+
+    def paint(self, painter, option, widget):
+        painter.setPen(Qt.NoPen)
+        painter.setBrush(Qt.darkGray)
+        painter.drawEllipse(-12, -12, 30, 30)
+        painter.setPen(QPen(Qt.black, 1))
+        painter.setBrush(QBrush(self.color))
+        painter.drawEllipse(-15, -15, 30, 30)
+
+    def mousePressEvent(self, event):
+        self.setCursor(Qt.ClosedHandCursor)
+
+    def mouseMoveEvent(self, event):
+        if QLineF(QPointF(event.screenPos()), QPointF(event.buttonDownScreenPos(Qt.LeftButton))).length() &lt; QApplication.startDragDistance():
+            return
+
+        drag = QDrag(event.widget())
+        mime = QMimeData()
+        drag.setMimeData(mime)
+
+        ColorItem.n += 1
+        if ColorItem.n &gt; 2 and qrand() % 3 == 0:
+            root = QFileInfo(__file__).absolutePath()
+
+            image = QImage(root + '/images/head.png')
+            mime.setImageData(image)
+            drag.setPixmap(QPixmap.fromImage(image).scaled(30,40))
+            drag.setHotSpot(QPoint(15, 30))
+        else:
+            mime.setColorData(self.color)
+            mime.setText("#%02x%02x%02x" % (self.color.red(), self.color.green(), self.color.blue()))
+
+            pixmap = QPixmap(34, 34)
+            pixmap.fill(Qt.white)
+
+            painter = QPainter(pixmap)
+            painter.translate(15, 15)
+            painter.setRenderHint(QPainter.Antialiasing)
+            self.paint(painter, None, None)
+            painter.end()
+
+            pixmap.setMask(pixmap.createHeuristicMask())
+
+            drag.setPixmap(pixmap)
+            drag.setHotSpot(QPoint(15, 20))
+
+        drag.exec_()
+        self.setCursor(Qt.OpenHandCursor)
+
+    def mouseReleaseEvent(self, event):
+        self.setCursor(Qt.OpenHandCursor)
+
+
+class RobotPart(QGraphicsObject):
+    def __init__(self, parent=None):
+        super(RobotPart, self).__init__(parent)
+
+        self.color = QColor(Qt.lightGray)
+        self.dragOver = False
+
+        self.setAcceptDrops(True)
+
+    def dragEnterEvent(self, event):
+        if event.mimeData().hasColor():
+            event.setAccepted(True)
+            self.dragOver = True
+            self.update()
+        else:
+            event.setAccepted(False)
+
+    def dragLeaveEvent(self, event):
+        self.dragOver = False
+        self.update()
+ 
+    def dropEvent(self, event):
+        self.dragOver = False
+        if event.mimeData().hasColor():
+            self.color = QColor(event.mimeData().colorData())
+
+        self.update()
+
+
+class RobotHead(RobotPart):
+    def __init__(self, parent=None):
+        super(RobotHead, self).__init__(parent)
+
+        self.pixmap = QPixmap()
+    
+    # 設定繪圖矩形範圍, 所有繪圖元件都必須在此範圍內
+    def boundingRect(self):
+        return QRectF(-15, -50, 30, 50)
+
+    def paint(self, painter, option, widget=None):
+        if self.pixmap.isNull():
+            painter.setBrush(self.color.lighter(130) if self.dragOver else self.color)
+            painter.drawRoundedRect(-10, -30, 20, 30, 25, 25, Qt.RelativeSize)
+            painter.setBrush(Qt.white)
+            painter.drawEllipse(-7, -3 - 20, 7, 7)
+            painter.drawEllipse(0, -3 - 20, 7, 7)
+            painter.setBrush(Qt.black)
+            painter.drawEllipse(-5, -1 - 20, 2, 2)
+            painter.drawEllipse(2, -1 - 20, 2, 2)
+            painter.setPen(QPen(Qt.black, 2))
+            painter.setBrush(Qt.NoBrush)
+            painter.drawArc(-6, -2 - 20, 12, 15, 190 * 16, 160 * 16)
+        else:
+            painter.scale(.2272, .2824)
+            painter.drawPixmap(QPointF(-15*4.4, -50*3.54), self.pixmap)
+
+    def dragEnterEvent(self, event):
+        if event.mimeData().hasImage():
+            event.setAccepted(True)
+            self.dragOver = True
+            self.update()
+        else:
+            super(RobotHead, self).dragEnterEvent(event)
+
+    def dropEvent(self, event):
+        if event.mimeData().hasImage():
+            self.dragOver = False
+            self.pixmap = QPixmap(event.mimeData().imageData())
+            self.update()
+        else:
+            super(RobotHead, self).dropEvent(event)
+
+
+class RobotTorso(RobotPart):
+    def boundingRect(self):
+        return QRectF(-30, -20, 60, 60)
+
+    def paint(self, painter, option, widget=None):
+        painter.setBrush(self.color.lighter(130) if self.dragOver else self.color)
+        painter.drawRoundedRect(-20, -20, 40, 60, 25, 25, Qt.RelativeSize)
+        painter.drawEllipse(-25, -20, 20, 20)
+        painter.drawEllipse(5, -20, 20, 20)
+        painter.drawEllipse(-20, 22, 20, 20)
+        painter.drawEllipse(0, 22, 20, 20)
+
+
+class RobotLimb(RobotPart):
+    def boundingRect(self):
+        return QRectF(-5, -5, 40, 10)
+
+    def paint(self, painter, option, widget=None):
+        painter.setBrush(self.color.lighter(130) if self.dragOver else  self.color)
+        painter.drawRoundedRect(self.boundingRect(), 50, 50, Qt.RelativeSize)
+        painter.drawEllipse(-5, -5, 10, 10)
+
+
+class Robot(RobotPart):
+    def __init__(self):
+        super(Robot, self).__init__()
+
+        self.setFlag(self.ItemHasNoContents)
+
+        self.torsoItem = RobotTorso(self)
+        self.headItem = RobotHead(self.torsoItem)
+        self.upperLeftArmItem = RobotLimb(self.torsoItem)
+        self.lowerLeftArmItem = RobotLimb(self.upperLeftArmItem)
+        self.upperRightArmItem = RobotLimb(self.torsoItem)
+        self.lowerRightArmItem = RobotLimb(self.upperRightArmItem)
+        self.upperRightLegItem = RobotLimb(self.torsoItem)
+        self.lowerRightLegItem = RobotLimb(self.upperRightLegItem)
+        self.upperLeftLegItem = RobotLimb(self.torsoItem)
+        self.lowerLeftLegItem = RobotLimb(self.upperLeftLegItem)
+
+        settings = (
+        #    Item                       Position        Rotation  Scale
+        #                                x     y    start    end
+            (self.headItem,              0,  -18,      20,   -20,   1.1),
+            (self.upperLeftArmItem,    -15,  -10,     190,   180,     0),
+            (self.lowerLeftArmItem,     30,    0,      50,    10,     0),
+            (self.upperRightArmItem,    15,  -10,     300,   310,     0),
+            (self.lowerRightArmItem,    30,    0,       0,   -70,     0),
+            (self.upperRightLegItem,    10,   32,      40,   120,     0),
+            (self.lowerRightLegItem,    30,    0,      10,    50,     0),
+            (self.upperLeftLegItem,    -10,   32,     150,    80,     0),
+            (self.lowerLeftLegItem,     30,    0,      70,    10,     0),
+            (self.torsoItem,             0,    0,       5,   -20,     0),
+        )
+
+        animation = QParallelAnimationGroup(self)
+        for item, pos_x, pos_y, start_rot, end_rot, scale in settings: 
+            item.setPos(pos_x, pos_y)
+
+            rot_animation = QPropertyAnimation(item, b'rotation')
+            rot_animation.setStartValue(start_rot)
+            rot_animation.setEndValue(end_rot)
+            rot_animation.setEasingCurve(QEasingCurve.SineCurve)
+            rot_animation.setDuration(2000)
+            animation.addAnimation(rot_animation)
+
+            if scale &gt; 0:
+                scale_animation = QPropertyAnimation(item, b'scale')
+                scale_animation.setEndValue(scale)
+                scale_animation.setEasingCurve(QEasingCurve.SineCurve)
+                scale_animation.setDuration(2000)
+                animation.addAnimation(scale_animation)
+
+        animation.setLoopCount(-1)
+        animation.start()
+
+    def boundingRect(self):
+        return QRectF()
+
+    def paint(self, painter, option, widget=None):
+        pass
+
+
+class GraphicsView(QGraphicsView):
+
+    def resizeEvent(self, e):
+        pass
+
+
+if __name__== '__main__':
+
+    import sys
+    import math
+    
+    # 利用 QApplication 類別建立應用程式物件
+    app = QApplication(sys.argv)
+    
+    # 
+    qsrand(QTime(0, 0, 0).secsTo(QTime.currentTime()))
+
+    scene = QGraphicsScene(-200, -200, 400, 400)
+
+    for i in range(10):
+        item = ColorItem()
+        angle = i*6.28 / 10.0
+        item.setPos(math.sin(angle)*150, math.cos(angle)*150)
+        scene.addItem(item)
+    
+    # 利用 Robot 類別建立物件
+    robot = Robot()
+    robot.setTransform(QTransform.fromScale(1.2, 1.2), True)
+    robot.setPos(0, -20)
+    
+    # 在場景中加入元件
+    scene.addItem(robot)
+    
+    # 將場景放入視圖中, 建立視圖物件
+    view = GraphicsView(scene)
+    
+    view.setRenderHint(QPainter.Antialiasing)
+    view.setViewportUpdateMode(QGraphicsView.BoundingRectViewportUpdate)
+    view.setBackgroundBrush(QColor(230, 200, 167))
+    view.setWindowTitle("Drag and Drop Robot")
+    
+    # 顯示試圖
+    view.show()
+    
+    # 讓應用程式進入事件迴圈
+    sys.exit(app.exec())
+</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
@@ -1419,13 +2149,6 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="yen.20170108171605.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
-<t tx="yen.20170108171622.1">2017 Fall 機械設計工程系 CADP &amp; CP
-
-倉儲位置: https://mde1a1.kmol.info/2017fall
-
-每一協同成員都應該要在 users 目錄下有一個 Leo 檔案
-
-</t>
 <t tx="yen.20170108171733.1"></t>
 <t tx="yen.20170108171733.10">&lt;head&gt;
     &lt;meta charset="utf-8"&gt;
