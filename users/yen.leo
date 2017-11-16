@@ -185,6 +185,7 @@
 <v t="leo.20171114221330.1"><vh>PyQt5 與 Serial</vh></v>
 </v>
 <v t="leo.20171114221848.1"><vh>PyQt5 animation</vh></v>
+<v t="leo.20171115182728.1"><vh>pyinstaller</vh></v>
 </vnodes>
 <tnodes>
 <t tx="leo.20170911090052.1">&lt;section data-markdown&gt;
@@ -2073,6 +2074,20 @@ if __name__== '__main__':
     # 讓應用程式進入事件迴圈
     sys.exit(app.exec())
 </t>
+<t tx="leo.20171115182728.1">python -m pip install pyinstaller
+
+pyinstaller -F -w calculator.py
+
+-w 表示去掉控制台窗口。GUI编程必用，若程序为命令行程序，不用该参数
+
+-F Create a one-file bundled executable
+
+基本参数介绍：
+-F：打包成一个独立的文件
+-D：创建一个独立的目录存放打包后的结果（默认）
+-w：表示去掉控制台窗口。GUI编程必用，若程序为命令行程序，不用该参数。
+-p：指定加载类的路径。（PYQT5需要使用）
+-i：指定可执行程序的图标</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/

@@ -218,6 +218,22 @@ th, td {
                 <p>2017 Fall CADP 課程的機電資整合實習題目為: 可重複循環運作的鋼球運動系統, 其中包括<span style="background-color: #ffff00;">機械領域</span>的: 機構運球系統與模組化軌道設計, <span style="background-color: #ffff00;">電子領域</span>的: Arduino 伺服馬達控制設計, 以及<span style="background-color: #ffff00;">資訊領域</span>的: PyQt5 監控程式系統設計等三個部分.</p>
 
 
+<iframe src="https://player.vimeo.com/video/243063216" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p><a href="https://vimeo.com/243063216">國立虎尾科技大學機械設計工程系電腦輔助設計實習 - 二甲第十週第一部分, 說明何謂電腦輔助設計? 以及如何進行機電資實習專案.</a> from <a href="https://vimeo.com/user24079973">國立虎尾科技大學機械設計工程系</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<iframe src="https://player.vimeo.com/video/243070610" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p><a href="https://vimeo.com/243070610">國立虎尾科技大學機械設計工程系電腦輔助設計實習 - 二甲第十週第二部分, 說明如何利用 AutoDesk TinkerCAD 中的 Circuits 模擬 Arduino 伺服馬達控制.</a> from <a href="https://vimeo.com/user24079973">國立虎尾科技大學機械設計工程系</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<iframe src="https://player.vimeo.com/video/243073950" width="640" height="513" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p><a href="https://vimeo.com/243073950">國立虎尾科技大學機械設計工程系電腦輔助設計實習 - 二甲第十週第三部分, 從 TinkerCAD 中下載 Marble Machine 軌道範例, 轉進 V-rep 模擬.</a> from <a href="https://vimeo.com/user24079973">國立虎尾科技大學機械設計工程系</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<iframe src="https://player.vimeo.com/video/243129278" width="640" height="333" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+<p><a href="https://vimeo.com/243129278">國立虎尾科技大學機械設計工程系電腦輔助設計實習 - 二甲第十週第四部分, 從 Thingiverse 中下載 Marble Machine 軌道範例, 轉進 V-rep 模擬.</a> from <a href="https://vimeo.com/user24079973">國立虎尾科技大學機械設計工程系</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
 <h3>機電資整合鋼球運動系統設計要求</h3>
 <p>其中, <span style="background-color: #ffff00;">連桿機構零組件</span>可以採用系上既有的 <a href="http://solvespace.com">Solvespace</a>、<a href="https://www.onshape.com/">Onshape</a>、<a href="http://www.solidworks.com/">Dassault Solidworks</a>、<a href="https://www.autodesk.com/products/inventor/overview">AutoDesk Inventor</a>、<a href="https://a360.autodesk.com/">AutoDesk A360</a> 或 <a href="https://www.ptc.com/en/products/cad/creo">PTC Creo</a> 繪製, <span style="background-color: #ffff00;">機構與鋼球運動模擬</span>可以採用 <a href="http://www.coppeliarobotics.com/">V-rep</a> 或 <a href="https://www.blender.org/">Blender</a> 進行, <span style="background-color: #ffff00;">控制</span> <a href="http://www.coppeliarobotics.com/">V-rep</a> 模擬系統的外部程式套件, 可以採用 <a href="http://www.coppeliarobotics.com/helpFiles/en/remoteApiFunctionsPython.htm">Python3 remote API</a> 架構完成, <span style="background-color: #ffff00;">電子系統</span>可以採用 AutoDesk <a href="https://www.tinkercad.com/">TinkerCAD</a> 模擬, 用來記錄鋼球通過關鍵點次數, 以及鋼球運動總距離及總爬升高度的<span style="background-color: #ffff00;">資訊系統</span>, 則可以採用 Python3 以及 PyQt5 建置, 而主要機構零組件則可以採系上既有的 3D 印表機組列印.</p>
 <p>各組所完成的"機電資整合鋼球運動系統", 必須包含一個主要的鋼球運送機構模組 (以下稱為主模組), 並且能夠納入各學員所完成的軌道機構模組 (以下稱為軌道模組), 進行循環運動, 且<span style="background-color: #ffff00;">整體系統的尺寸必須能夠放入郵局 <a href="https://www.post.gov.tw/post/internet/box/index_2_2.jsp?id=3">Box2 紙箱</a>中(規格: 23×18×19(cm)</span>.</p>
@@ -233,7 +249,7 @@ th, td {
 <pre class="brush: python">
 from sympy.geometry import *
 from sympy import N
-# N(expr, <args>) 等於 sympify(expr).evalf(<args>)
+# N(expr, &lt;args&gt;) 等於 sympify(expr).evalf(&lt;args&gt;)
 
 P1 = Point(-127.11, 37.29)
 P2 = Point(-89.42, 50.69)
@@ -323,7 +339,7 @@ print(N(perL24.intersection(perL46)[0], 3))
 <p>橘色線 PWM</p>
 <p>控制程式:</p>
 <pre class="brush: cpp">
-#include <Servo.h>
+#include &lt;Servo.h&gt;
 Servo myservo;  // 建立一個 servo 物件，最多可建立 12個 servo
 
 int pos = 0;    // 設定 Servo 位置的變數
@@ -334,14 +350,14 @@ void setup() {
 
 void loop() {
   // 正轉 180度
-  for (pos = 0; pos <= 180; pos += 1) // 從 0 度旋轉到 180 度，每次 1 度 
+  for (pos = 0; pos &lt;= 180; pos += 1) // 從 0 度旋轉到 180 度，每次 1 度 
   {     
     myservo.write(pos);               // 告訴 servo 走到 'pos' 的位置
     delay(15);                        // 等待 15ms 讓 servo 走到指定位置
   }
 
 // 反轉 180度
-  for (pos = 180; pos >= 0; pos -= 1) // 從 180 度旋轉到 0 度，每次 1 度 
+  for (pos = 180; pos &gt;= 0; pos -= 1) // 從 180 度旋轉到 0 度，每次 1 度 
   { 
     myservo.write(pos);               // 告訴 servo 走到 'pos' 的位置
 

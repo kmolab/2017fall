@@ -25,6 +25,22 @@
 </summary><content type="html">&lt;p&gt;2017 Fall CADP 課程的機電資整合實習題目為: 可重複循環運作的鋼球運動系統, 其中包括&lt;span style="background-color: #ffff00;"&gt;機械領域&lt;/span&gt;的: 機構運球系統與模組化軌道設計, &lt;span style="background-color: #ffff00;"&gt;電子領域&lt;/span&gt;的: Arduino 伺服馬達控制設計, 以及&lt;span style="background-color: #ffff00;"&gt;資訊領域&lt;/span&gt;的: PyQt5 監控程式系統設計等三個部分.&lt;/p&gt;
 
 
+&lt;iframe src="https://player.vimeo.com/video/243063216" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/243063216"&gt;國立虎尾科技大學機械設計工程系電腦輔助設計實習 - 二甲第十週第一部分, 說明何謂電腦輔助設計? 以及如何進行機電資實習專案.&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/243070610" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/243070610"&gt;國立虎尾科技大學機械設計工程系電腦輔助設計實習 - 二甲第十週第二部分, 說明如何利用 AutoDesk TinkerCAD 中的 Circuits 模擬 Arduino 伺服馬達控制.&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/243073950" width="640" height="513" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/243073950"&gt;國立虎尾科技大學機械設計工程系電腦輔助設計實習 - 二甲第十週第三部分, 從 TinkerCAD 中下載 Marble Machine 軌道範例, 轉進 V-rep 模擬.&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/243129278" width="640" height="333" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/243129278"&gt;國立虎尾科技大學機械設計工程系電腦輔助設計實習 - 二甲第十週第四部分, 從 Thingiverse 中下載 Marble Machine 軌道範例, 轉進 V-rep 模擬.&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
 &lt;h3&gt;機電資整合鋼球運動系統設計要求&lt;/h3&gt;
 &lt;p&gt;其中, &lt;span style="background-color: #ffff00;"&gt;連桿機構零組件&lt;/span&gt;可以採用系上既有的 &lt;a href="http://solvespace.com"&gt;Solvespace&lt;/a&gt;、&lt;a href="https://www.onshape.com/"&gt;Onshape&lt;/a&gt;、&lt;a href="http://www.solidworks.com/"&gt;Dassault Solidworks&lt;/a&gt;、&lt;a href="https://www.autodesk.com/products/inventor/overview"&gt;AutoDesk Inventor&lt;/a&gt;、&lt;a href="https://a360.autodesk.com/"&gt;AutoDesk A360&lt;/a&gt; 或 &lt;a href="https://www.ptc.com/en/products/cad/creo"&gt;PTC Creo&lt;/a&gt; 繪製, &lt;span style="background-color: #ffff00;"&gt;機構與鋼球運動模擬&lt;/span&gt;可以採用 &lt;a href="http://www.coppeliarobotics.com/"&gt;V-rep&lt;/a&gt; 或 &lt;a href="https://www.blender.org/"&gt;Blender&lt;/a&gt; 進行, &lt;span style="background-color: #ffff00;"&gt;控制&lt;/span&gt; &lt;a href="http://www.coppeliarobotics.com/"&gt;V-rep&lt;/a&gt; 模擬系統的外部程式套件, 可以採用 &lt;a href="http://www.coppeliarobotics.com/helpFiles/en/remoteApiFunctionsPython.htm"&gt;Python3 remote API&lt;/a&gt; 架構完成, &lt;span style="background-color: #ffff00;"&gt;電子系統&lt;/span&gt;可以採用 AutoDesk &lt;a href="https://www.tinkercad.com/"&gt;TinkerCAD&lt;/a&gt; 模擬, 用來記錄鋼球通過關鍵點次數, 以及鋼球運動總距離及總爬升高度的&lt;span style="background-color: #ffff00;"&gt;資訊系統&lt;/span&gt;, 則可以採用 Python3 以及 PyQt5 建置, 而主要機構零組件則可以採系上既有的 3D 印表機組列印.&lt;/p&gt;
 &lt;p&gt;各組所完成的"機電資整合鋼球運動系統", 必須包含一個主要的鋼球運送機構模組 (以下稱為主模組), 並且能夠納入各學員所完成的軌道機構模組 (以下稱為軌道模組), 進行循環運動, 且&lt;span style="background-color: #ffff00;"&gt;整體系統的尺寸必須能夠放入郵局 &lt;a href="https://www.post.gov.tw/post/internet/box/index_2_2.jsp?id=3"&gt;Box2 紙箱&lt;/a&gt;中(規格: 23×18×19(cm)&lt;/span&gt;.&lt;/p&gt;
@@ -40,7 +56,7 @@
 &lt;pre class="brush: python"&gt;
 from sympy.geometry import *
 from sympy import N
-# N(expr, &lt;args&gt;) 等於 sympify(expr).evalf(&lt;args&gt;)
+# N(expr, &amp;lt;args&amp;gt;) 等於 sympify(expr).evalf(&amp;lt;args&amp;gt;)
 
 P1 = Point(-127.11, 37.29)
 P2 = Point(-89.42, 50.69)
@@ -130,7 +146,7 @@ print(N(perL24.intersection(perL46)[0], 3))
 &lt;p&gt;橘色線 PWM&lt;/p&gt;
 &lt;p&gt;控制程式:&lt;/p&gt;
 &lt;pre class="brush: cpp"&gt;
-#include &lt;Servo.h&gt;
+#include &amp;lt;Servo.h&amp;gt;
 Servo myservo;  // 建立一個 servo 物件，最多可建立 12個 servo
 
 int pos = 0;    // 設定 Servo 位置的變數
@@ -141,14 +157,14 @@ void setup() {
 
 void loop() {
   // 正轉 180度
-  for (pos = 0; pos &lt;= 180; pos += 1) // 從 0 度旋轉到 180 度，每次 1 度 
+  for (pos = 0; pos &amp;lt;= 180; pos += 1) // 從 0 度旋轉到 180 度，每次 1 度 
   {     
     myservo.write(pos);               // 告訴 servo 走到 'pos' 的位置
     delay(15);                        // 等待 15ms 讓 servo 走到指定位置
   }
 
 // 反轉 180度
-  for (pos = 180; pos &gt;= 0; pos -= 1) // 從 180 度旋轉到 0 度，每次 1 度 
+  for (pos = 180; pos &amp;gt;= 0; pos -= 1) // 從 180 度旋轉到 0 度，每次 1 度 
   { 
     myservo.write(pos);               // 告訴 servo 走到 'pos' 的位置
 
@@ -172,6 +188,10 @@ delay(15);                        // 等待 15ms 讓 servo 走到指定位置
 &lt;iframe src="https://player.vimeo.com/video/242529543" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="https://vimeo.com/242529543"&gt;國立虎尾科技大學機械設計工程系計算機程式 - 一乙第十週第二部分, 說明如何利用 Eric6 建立簡單的計算機程式, 包含利用  Qt Designer 建立對話框, 並建立透過主程式引用執行.&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/243042097" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/243042097"&gt;國立虎尾科技大學機械設計工程系計算機程式 - 一甲第十週第三部分, 說明如何開始利用  Eric6 與 Qt Designer, 建立計算機程式所需的對話框以及程式邏輯.&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;接下來則必須配合 Dialog.ui, 在 Eric6 的表單頁面, 在 Dialog.ui 位置以滑鼠右鍵, 指定 Generate Dialog Code, 操作畫面如下:&lt;/p&gt;
 &lt;p&gt;&lt;img class = "border" src="./../data/images/eric6_generate_dialog_code.png"&gt;&lt;/img&gt;&lt;/p&gt;
@@ -506,6 +526,14 @@ for i in range(len(b_stud_list)):
 &lt;iframe src="https://player.vimeo.com/video/242527163" width="640" height="512" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
 
 &lt;p&gt;&lt;a href="https://vimeo.com/242527163"&gt;國立虎尾科技大學機械設計工程系計算機程式 - 一乙第十週第一部分, 說明如何客製化可攜程式系統, 直接以 start.bat 開啟 Leo Editor, 並開啟內定的專案檔&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/243035518" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/243035518"&gt;國立虎尾科技大學機械設計工程系計算機程式 - 一甲第十週第一部分, 說明如何客製化可攜程式系統, 直接以 start.bat 開啟 Leo Editor, 下載 Dia 與 Gimp 可攜程式, 用來編輯 2D 表達用的圖檔.&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src="https://player.vimeo.com/video/243037384" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/243037384"&gt;國立虎尾科技大學機械設計工程系計算機程式 - 一甲第十週第二部分, 說明如何利用 ShareX, Gimp 與 Dia 處理 2D 圖檔的內容標示.&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
 
 &lt;h3&gt;手動建立 PyQt5 視窗介面&lt;/h3&gt;
 &lt;p&gt;最簡單的 &lt;a href="http://pyqt.sourceforge.net/Docs/PyQt5/modules.html"&gt;PyQt5&lt;/a&gt; 程式直接利用 &lt;a href="http://doc.qt.io/qt-5/qtwidgets-module.html"&gt;QtWidgets&lt;/a&gt; 中的 &lt;a href="http://doc.qt.io/qt-5/qwidget.html"&gt;QWidget&lt;/a&gt; 呈現簡單的視窗, 然後利用 &lt;a href="http://doc.qt.io/qt-5/qapplication.html"&gt;QApplication&lt;/a&gt; 建立應用程式後, 以應用程式的 &lt;a href="http://doc.qt.io/qt-5/qapplication.html#exec"&gt;exec()&lt;/a&gt; 方法進入事件迴圈.&lt;/p&gt;
