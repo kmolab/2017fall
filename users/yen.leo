@@ -173,6 +173,8 @@
 <v t="leo.20171113074703.1"><vh>@edit 20171113.md</vh></v>
 <v t="leo.20171114102922.1"><vh>@edit 20171114.md</vh></v>
 <v t="leo.20171115072812.1"><vh>@edit 20171115.md</vh></v>
+<v t="leo.20171118102453.1"><vh>@edit 20171118.md</vh></v>
+<v t="leo.20171118221945.1"><vh>@edit 20171118-1.rst</vh></v>
 <v t="yen.20170108171733.81"><vh>@path pages</vh>
 <v t="yen.20170108171733.82"><vh>@edit pages_1.md</vh></v>
 </v>
@@ -181,6 +183,7 @@
 </v>
 <v t="yen.20170108171930.1"><vh>@button https server</vh></v>
 <v t="yen.20170108171939.1"><vh>@button ipv6 https server</vh></v>
+<v t="leo.20171118102312.1"><vh>Windows 操作</vh></v>
 <v t="leo.20170924230247.1"><vh>PyQt5 and OpenGL</vh>
 <v t="leo.20171114221330.1"><vh>PyQt5 與 Serial</vh></v>
 </v>
@@ -410,7 +413,6 @@
 <t tx="leo.20170912150710.1"></t>
 <t tx="leo.20170912150710.2">@language python
 import os
-#os.system("pelican content -o output -s local_publishconf.py -t theme/pelican-bootstrap3")
 os.system("pelican content -o blog -s publishconf.py")
 g.es("admin pelican Github 執行完畢")
 
@@ -2088,6 +2090,11 @@ pyinstaller -F -w calculator.py
 -w：表示去掉控制台窗口。GUI编程必用，若程序为命令行程序，不用该参数。
 -p：指定加载类的路径。（PYQT5需要使用）
 -i：指定可执行程序的图标</t>
+<t tx="leo.20171118102312.1">Windows system-wide proxy setup:
+
+run dos command as administrator
+
+netsh winhttp import proxy source=ie</t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
@@ -2280,7 +2287,6 @@ Created by [KMOLab](http://kmolab.github.io/blog/)
 </t>
 <t tx="yen.20170108171733.2">@language python
 import os
-#os.system("pelican content -o output -s local_publishconf.py -t theme/pelican-bootstrap3")
 os.system("pelican content -o blog -s local_publishconf.py")
 g.es("admin pelican 近端執行完畢")
 
