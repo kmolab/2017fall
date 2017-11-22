@@ -42,7 +42,7 @@
 <v t="leo.20170912210747.4"><vh>@edit article.html</vh></v>
 </v>
 </v>
-<v t="yen.20170108171733.8" a="E"><vh>@clean index.html</vh>
+<v t="yen.20170108171733.8"><vh>@clean index.html</vh>
 <v t="yen.20170108171733.9" a="E"><vh>html</vh>
 <v t="yen.20170108171733.10"><vh>head</vh></v>
 <v t="yen.20170108171733.11" a="E"><vh>body</vh>
@@ -175,6 +175,8 @@
 <v t="leo.20171115072812.1"><vh>@edit 20171115.md</vh></v>
 <v t="leo.20171118102453.1"><vh>@edit 20171118.md</vh></v>
 <v t="leo.20171118221945.1"><vh>@edit 20171118-1.rst</vh></v>
+<v t="leo.20171122100632.1"><vh>@edit 20171122.md</vh></v>
+<v t="leo.20171122215040.1"><vh>@edit 20171122-1.md</vh></v>
 <v t="yen.20170108171733.81"><vh>@path pages</vh>
 <v t="yen.20170108171733.82"><vh>@edit pages_1.md</vh></v>
 </v>

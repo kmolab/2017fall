@@ -1,5 +1,130 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Fall CADP&amp;CP (虎尾科大MDE) - Course</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/" rel="alternate"></link><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/feeds/course.atom.xml" rel="self"></link><id>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/</id><updated>2017-11-15T11:00:00+08:00</updated><entry><title>何謂電腦輔助設計?</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-cadp-what-is-computer-aided-design.html" rel="alternate"></link><published>2017-11-15T11:00:00+08:00</published><updated>2017-11-15T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-11-15:/2017fall/doc/trunk/blog/kmol-2017-fall-cadp-what-is-computer-aided-design.html</id><summary type="html">&lt;p&gt;電腦輔助設計的英文為 Computer Aided Design, 大意是運用電腦的功能與特性, 協助使用者完成設計.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Fall CADP&amp;CP (虎尾科大MDE) - Course</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/" rel="alternate"></link><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/feeds/course.atom.xml" rel="self"></link><id>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/</id><updated>2017-11-22T12:00:00+08:00</updated><entry><title>事件導向程式設計</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-event-driven-programming-design.html" rel="alternate"></link><published>2017-11-22T12:00:00+08:00</published><updated>2017-11-22T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-11-22:/2017fall/doc/trunk/blog/kmol-2017-fall-event-driven-programming-design.html</id><summary type="html">&lt;p&gt;目前正在進行中的普通計算機程式設計, 採用 PyQt5 與 Python3 建立, 預計採用事件導向的方式完成.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;目前正在進行中的普通計算機程式設計, 採用 PyQt5 與 Python3 建立, 預計採用事件導向的方式完成.&lt;/p&gt;
+
+
+&lt;h2&gt;計算機視窗介面&lt;/h2&gt;
+&lt;p&gt;PyQt5 普通計算機視窗介面:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;10 個數字鍵, 分別為 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 使用者按下個數字鍵, 將會在顯示幕中顯示該數字值&lt;/li&gt;
+&lt;li&gt;小數點按鍵 ., 按下後顯示小數點&lt;/li&gt;
+&lt;li&gt;加號按鍵 +, 按下後進行兩數相加&lt;/li&gt;
+&lt;li&gt;減號按鍵 -, 按下後進行兩數相減&lt;/li&gt;
+&lt;li&gt;乘號按鍵 *, 按下後進行兩數相乘&lt;/li&gt;
+&lt;li&gt;除號按鍵 /, 按下後進行兩數相除&lt;/li&gt;
+&lt;li&gt;等於按鍵 =, 將運算結果列在顯示幕&lt;/li&gt;
+&lt;li&gt;清除顯示幕按鍵 C, 清除顯示幕內容並重置暫存資料&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;首先, 重複按數字鍵, 數字會進位, 例如: 按下兩次 1, 表示輸入 11
+但是, 若目前顯示幕為 0, 則再按 0 並不會進位成為 00, 而仍然顯示 0, 而且若初始顯示幕為 0, 使用者按下運算數時, 顯示幕應該會清除, 然後配合使用者輸入的數字顯示.&lt;/p&gt;
+&lt;p&gt;因此按數字鍵的處理方法, 必須判斷:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;是否在等待輸入運算數階段, 若是則必須刷新顯示幕, 而且改變判斷狀態, 因為在初始時, 等待輸入運算數判斷變數為真,  一旦已經輸入數值, 則該變數必須重置&lt;/li&gt;
+&lt;li&gt;顯示幕是否為 0 或 0.0, 這時若再輸入 0 則數值並不會累計, 而是維持原先顯示的 0 狀態&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;表示計算機經歷狀態改變, 而且在不同狀態下會有不同表現.&lt;/p&gt;
+&lt;p&gt;按下 C 清除螢幕, 重置各暫存值, 這時顯示幕為 0, 按一下 5, 則顯示幕中的 0 由 5 取代, 若再按一個 5, 則應該顯示 55, 表示可以字串堆疊的方式, 將原先顯示幕中的 5 字串, 再附加字串 5, 即可成為 55.&lt;/p&gt;
+&lt;p&gt;接著若按下 +, 則顯示幕上仍顯示 55, 若在 + 號之後, 再按下 3, 則顯示幕已經不能再以附加字串的方式處理, 變成 553, 而應該只顯示 3, 而且若接下來按下 =, 之前的 55 應該要在顯示 3 之前暫存, 以便能夠在按下 = 時, 完成 55 + 3 的運算, 並且將答案 58 列在顯示幕上.&lt;/p&gt;
+&lt;p&gt;因此, 若單純的兩數相加, 狀態分為"等待輸入運算", "運算子", 顯示幕中的數值以及目前的暫存值, 以 55 + 3 = 58, 總共經歷:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;一開始顯示幕為 0, "等待輸入運算數" 變數為 True, 累加暫存變數值為 0.&lt;/li&gt;
+&lt;li&gt;使用者輸入第一個 5, 進入數字按鍵處理方法, 因"等待輸入運算數"為真, 因此刷新顯示幕, 重置"等待輸入運算數", 在顯示幕中列出 5.&lt;/li&gt;
+&lt;li&gt;使用者輸入第二個 5, 再次進入數字按鍵處理方法, 因"等待輸入運算數"為假 (因為正處於運算數輸入階段), 因此不會刷新顯示幕, 而是將第二次輸入的 5 與顯示幕上的 5 堆疊, 顯示 55.&lt;/li&gt;
+&lt;li&gt;使用者輸入 +, 這時顯示幕畫面仍顯示 55, 但是"運算子"變數存入 "+" 字串, 顯示幕中的 55 數值暫時放入累加變數, 成為左運算數, 運算子為  +, 離開之前, 將"等待輸入運算數"設為真.&lt;/li&gt;
+&lt;li&gt;使用者再輸入數字 3, 進入數字按鍵處理方法, 因"等待輸入運算數"為真, 因此刷新顯示幕, 重置"等待輸入運算數", 在顯示幕中列出 3.&lt;/li&gt;
+&lt;li&gt;使用者此時輸入 =, 左運算數即為暫存累加變數, 為 55, 運算子為  +, 顯示幕上的 3 則為目前的右運算數, = 按鍵處理方法, 進入暫存累加變數 55 再加上運算數 3 的運算, 得到 58, 將數值列在顯示幕, 所有變數重置恢復原始值, 即"等待輸入運算數"為真, 暫存變數歸零.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;上述計算機的行為, 可以利用有限狀態機器的方式進行模擬, 普通計算機有多少狀態? 當計算機從某一狀態轉進另一狀態時, 應該如何表示出計算機該有的行為?&lt;/p&gt;
+&lt;p&gt;&lt;img alt="pyqt5_calculator_state_transitions" src="./../data/images/pyqt5_calculator_state_transitions.png"&gt;&lt;/p&gt;
+&lt;p&gt;Github 協同展示倉儲: &lt;a href="https://github.com/scrum-1/scrum_pyqt5_calculator"&gt;https://github.com/scrum-1/scrum_pyqt5_calculator&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;參考資料&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://fsharpforfunandprofit.com/posts/calculator-complete-v2/"&gt;Calculator Walkthrough: Part 4&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://cnx.org/contents/m6wVXVCe@2/Finite-State-Machines-and-the-"&gt;Finite State Machines and the State Design Pattern&lt;/a&gt;&lt;/p&gt;</content><category term="2017fall"></category><category term="PyQt5"></category><category term="Calculator"></category></entry><entry><title>Pelican 與 Pandoc MD 導引</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-pelican-and-pandoc-markdown-format.html" rel="alternate"></link><published>2017-11-22T11:00:00+08:00</published><updated>2017-11-22T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-11-22:/2017fall/doc/trunk/blog/kmol-2017-fall-pelican-and-pandoc-markdown-format.html</id><summary type="html">&lt;p&gt;&lt;a href="https://github.com/getpelican/pelican"&gt;Pelican&lt;/a&gt; 是一套靜態網誌產生程式, 使用者可以從 &lt;a href="https://github.com/getpelican/pelican"&gt;https://github.com/getpelican/pelican&lt;/a&gt; 下載, 操作手冊位於 &lt;a href="http://docs.getpelican.com/en/stable/"&gt;Pelican Document&lt;/a&gt;.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;&lt;a href="https://github.com/getpelican/pelican"&gt;Pelican&lt;/a&gt; 是一套靜態網誌產生程式, 使用者可以從 &lt;a href="https://github.com/getpelican/pelican"&gt;https://github.com/getpelican/pelican&lt;/a&gt; 下載, 操作手冊位於 &lt;a href="http://docs.getpelican.com/en/stable/"&gt;Pelican Document&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;h2&gt;Markdown 中的連結&lt;/h2&gt;
+&lt;!-- 以下為 Pandoc Markdown 連結中的引用連結格式 --&gt;
+
+&lt;p&gt;假如將上述超文件的 Markdown 列出, 就可以看出其中有三種引用全球資訊網 URL 連結的不同格式寫法:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;Pelican&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt; &lt;span class="err"&gt;是一套靜態網誌產生程式&lt;/span&gt;&lt;span class="p"&gt;,&lt;/span&gt; &lt;span class="err"&gt;使用者可以從&lt;/span&gt; &lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="nl"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//github.com/getpelican/pelican&amp;gt; 下載, 操作手冊位於 [Pelican Document](http://docs.getpelican.com/en/stable/).&lt;/span&gt;
+
+&lt;span class="o"&gt;&amp;lt;!--&lt;/span&gt; &lt;span class="n"&gt;PELICAN_END_SUMMARY&lt;/span&gt; &lt;span class="o"&gt;--&amp;gt;&lt;/span&gt;
+
+&lt;span class="o"&gt;&amp;lt;!--&lt;/span&gt; &lt;span class="err"&gt;以下為&lt;/span&gt; &lt;span class="n"&gt;Pandoc&lt;/span&gt; &lt;span class="n"&gt;Markdown&lt;/span&gt; &lt;span class="err"&gt;連結中的引用連結格式&lt;/span&gt; &lt;span class="o"&gt;--&amp;gt;&lt;/span&gt;
+
+&lt;span class="p"&gt;[&lt;/span&gt;&lt;span class="n"&gt;Pelican&lt;/span&gt;&lt;span class="p"&gt;]&lt;/span&gt;&lt;span class="o"&gt;:&lt;/span&gt; &lt;span class="nl"&gt;https&lt;/span&gt;&lt;span class="p"&gt;:&lt;/span&gt;&lt;span class="c1"&gt;//github.com/getpelican/pelican&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;從 &lt;a href="https://pandoc.org/MANUAL.html#reference-links"&gt;https://pandoc.org/MANUAL.html#reference-links&lt;/a&gt; 可以了解, 在 URL 網址前後加上尖括號 (angle brackets) 可以直接引用該連結, 轉成 html 之後, 就是一個以網址為連結文字的 anchor 標註, 假如在文章中需要透過關鍵字, 大量引用某一個網址，則可以使用 Reference Links, 也就是用中括號 (brackets) 圈住所要連結的按鈕文字後, 在文章任何地方, 以中括號標示引用的關鍵字, 然後加上冒號 (colon) 再接上點按該引用關鍵字後, 所要連結的網址. 也就是上段文句中, 一開頭引用 &lt;a href="https://github.com/getpelican/pelican"&gt;Pelican&lt;/a&gt; Github 倉儲的用法.&lt;/p&gt;
+&lt;p&gt;假如希望在文章中直接以按鈕關鍵字連接網站, 則可以使用 Inline Links, 也就是利用中括號 (brackets) 圈住所要連結的按鈕文字後, 直接 (中括號與小括號間不可以有空白) 加上以小括號 (parentheses) 圈起的網址. &lt;/p&gt;
+&lt;p&gt;與這些文字寫作相關的符號英文名稱, 可以參考 &lt;a href="http://www.thepunctuationguide.com"&gt;http://www.thepunctuationguide.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;此外, 我們在 Markdown 格式文章中, 選擇採用 html 的註解格式, 當內容被轉換為 html 時, 仍會保留, 但是轉成 LaTeX 格式後, 這些原始內容中的註解將不會出現.&lt;/p&gt;
+&lt;h2&gt;操作影片的引用&lt;/h2&gt;
+&lt;p&gt;在超文件中引用操作影片, 使用者可以從嵌入的小視窗點擊後, 直接在瀏覽器上觀看影片. 但是若該影片嵌入經過 Pandoc 將 Markdown 格式內容, 先轉為 LaTeX 之後, 再輸出為 PDF 格式, 比較好的做法, 應該是呈現能夠代表該影片的圖片, 然後再提供連結到該影片的 URL.&lt;/p&gt;
+&lt;p&gt;Youtube 提供了直接透過影片連結, 取得代表圖片的方法, 例如: 影片連結為 &lt;a href="https://www.youtube.com/watch?v=xCa6YX8vJOI"&gt;https://www.youtube.com/watch?v=xCa6YX8vJOI&lt;/a&gt; 的代表圖片為:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="影片對應圖片" src="http://img.youtube.com/vi/xCa6YX8vJOI/0.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;從影片連結取得對應圖片的說明如下:&lt;/p&gt;
+&lt;p&gt;從 Vimeo 影片連結取相關圖片: &lt;a href="https://coderwall.com/p/fdrdmg/get-a-thumbnail-from-a-vimeo-video"&gt;https://coderwall.com/p/fdrdmg/get-a-thumbnail-from-a-vimeo-video&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;從 Youtube 影片連結取相關圖片: &lt;a href="https://coderwall.com/p/nihgwq/get-a-thumbnail-from-a-youtube-video"&gt;https://coderwall.com/p/nihgwq/get-a-thumbnail-from-a-youtube-video&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;以下則是利用 JQuery 與 Vimeo 的 API, 利用影片 id 擷取相關圖片的方法, 所使用的影片為 &lt;a href="https://vimeo.com/243129278"&gt;https://vimeo.com/243129278&lt;/a&gt;:&lt;/p&gt;
+&lt;p&gt;Javascript 程式碼與 img 標註如下:&lt;/p&gt;
+&lt;pre class="brush: jscript"&gt;
+&lt;script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"&gt;&lt;/script&gt;
+
+&lt;script&gt;
+function vimeoLoadingThumb(id){    
+    var url = "https://vimeo.com/api/v2/video/" + id + ".json?callback=showThumb";
+
+    var id_img = "#vimeo-" + id;
+    var script = document.createElement( 'script' );
+    script.type = 'text/javascript';
+    script.src = url;
+
+    $(id_img).before(script);
+}
+
+function showThumb(data){
+    var id_img = "#vimeo-" + data[0].id;
+    $(id_img).attr('src',data[0].thumbnail_large);
+}
+
+$(function() {
+    vimeoLoadingThumb(243129278);
+});
+&lt;/script&gt;
+
+&lt;img id="vimeo-243129278" src="" alt="This is the example"&gt;&lt;/img&gt;
+&lt;/pre&gt;
+
+&lt;h2&gt;圖片引用&lt;/h2&gt;
+&lt;p&gt;在本網誌倉儲, 圖片目錄位於 data/images, 使用者可以利用:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;![圖片 caption](./../data/images/procedure_vs_gui_flow.png)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;直接引用這張圖:&lt;/p&gt;
+&lt;p&gt;&lt;img alt="圖片 caption" src="./../data/images/procedure_vs_gui_flow.png"&gt;&lt;/p&gt;
+&lt;h2&gt;數學方程式&lt;/h2&gt;
+&lt;p&gt;在 Pelican 網誌中的 Markdown 可以輸入 LaTeX 格式的數學方程式, 例如: 下列數學式原始碼, 可以轉為動態 gif 圖檔.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$$Fit_{min} = \sum_{i=0}^{n}\sqrt{(O_{x,i}-N_{x,i})^2+(O_{y,i}-N_{y,i})^2}$$
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;轉換完成的數學方程式:&lt;/p&gt;
+&lt;p&gt;$$Fit_{min} = \sum_{i=0}^{n}\sqrt{(O_{x,i}-N_{x,i})^2+(O_{y,i}-N_{y,i})^2}$$&lt;/p&gt;
+&lt;h2&gt;Pelican 文章中的 status&lt;/h2&gt;
+&lt;p&gt;在 Pelican 中的 Markdown 格式, 支援 Status: draft 與 Status: published 等兩種 status, 前者代表尚未完成的草稿, 而後者的狀態為內建的"已經出版".&lt;/p&gt;
+&lt;h2&gt;&lt;a href="https://git-scm.com/"&gt;Git&lt;/a&gt; 與 &lt;a href="https://github.com/"&gt;Github&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;2017 Fall 的課程中, 首先導入的軟體組態管理系統為 &lt;a href="https://www.fossil-scm.org/"&gt;Fossil SCM&lt;/a&gt;, 其特色是檔案小但是功能齊全, 可方便在區域或廣域網路上建立個人或團隊的專案倉儲, 但是若要擴大倉儲資料的應用性, 就必須使用 &lt;a href="https://git-scm.com/"&gt;Git&lt;/a&gt; 與 &lt;a href="https://github.com/"&gt;Github&lt;/a&gt;, 至於 &lt;a href="https://bitbucket.org/"&gt;Bitbucket&lt;/a&gt; 與 &lt;a href="https://about.gitlab.com/"&gt;Gitlab&lt;/a&gt; 或其他類似的服務, 則可用來做為主要倉儲的備份.&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/"&gt;Github&lt;/a&gt; 的初步使用, 可以參考 &lt;a href="https://guides.github.com/activities/hello-world/"&gt;https://guides.github.com/activities/hello-world/&lt;/a&gt;, 較完整的 &lt;a href="https://git-scm.com/"&gt;Git&lt;/a&gt; 使用說明, 請參考 &lt;a href="https://git-scm.com/book/zh-tw/v2"&gt;https://git-scm.com/book/zh-tw/v2&lt;/a&gt;.&lt;/p&gt;
+&lt;h2&gt;課程實習&lt;/h2&gt;
+&lt;p&gt;自第十二週起, 每一位學員必須利用各自學校配發的 Gmail 申請 &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; 帳號, 計算機程式將以小組為單位, 練習利用分組 &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; 倉儲, 協同開發 Python3 + PyQt5 程式, 並準備各組的簡報、網頁與 PDF 格式的期末報告.&lt;/p&gt;
+&lt;p&gt;電腦輔助設計實習課程學員, 尚未申請 &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; 者, 也必須自行申請, 之後必須設法在小組倉儲中準備各組的簡報網頁與 PDF 格式的期末報告.&lt;/p&gt;</content><category term="2017fall"></category><category term="report"></category><category term="Pelican"></category><category term="Pandoc"></category><category term="Markdown"></category></entry><entry><title>何謂電腦輔助設計?</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-cadp-what-is-computer-aided-design.html" rel="alternate"></link><published>2017-11-15T11:00:00+08:00</published><updated>2017-11-15T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-11-15:/2017fall/doc/trunk/blog/kmol-2017-fall-cadp-what-is-computer-aided-design.html</id><summary type="html">&lt;p&gt;電腦輔助設計的英文為 Computer Aided Design, 大意是運用電腦的功能與特性, 協助使用者完成設計.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;電腦輔助設計的英文為 Computer Aided Design, 大意是運用電腦的功能與特性, 協助使用者完成設計.&lt;/p&gt;
 
 
