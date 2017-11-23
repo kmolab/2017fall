@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Fall CADP&amp;CP (虎尾科大MDE) - Course</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/" rel="alternate"></link><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/feeds/course.atom.xml" rel="self"></link><id>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/</id><updated>2017-11-22T12:00:00+08:00</updated><entry><title>事件導向程式設計</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-event-driven-programming-design.html" rel="alternate"></link><published>2017-11-22T12:00:00+08:00</published><updated>2017-11-22T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-11-22:/2017fall/doc/trunk/blog/kmol-2017-fall-event-driven-programming-design.html</id><summary type="html">&lt;p&gt;目前正在進行中的普通計算機程式設計, 採用 PyQt5 與 Python3 建立, 預計採用事件導向的方式完成.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Fall CADP&amp;CP (虎尾科大MDE) - Course</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/" rel="alternate"></link><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/feeds/course.atom.xml" rel="self"></link><id>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/</id><updated>2017-11-23T11:00:00+08:00</updated><entry><title>Github 協同倉儲</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-github-pages.html" rel="alternate"></link><published>2017-11-23T11:00:00+08:00</published><updated>2017-11-23T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-11-23:/2017fall/doc/trunk/blog/kmol-2017-fall-github-pages.html</id><summary type="html">&lt;p&gt;在進入計算機程式與電腦輔助設計實習第十二週課程時, 將請各學員利用學校配發的電子郵箱申請 &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; 帳號, 目的是以小組協同的模式, 執行各自的期末專案.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;在進入計算機程式與電腦輔助設計實習第十二週課程時, 將請各學員利用學校配發的電子郵箱申請 &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; 帳號, 目的是以小組協同的模式, 執行各自的期末專案.&lt;/p&gt;
+
+
+&lt;h2&gt;&lt;a href="https://git-scm.com/"&gt;Git&lt;/a&gt; 與 Github Pages&lt;/h2&gt;
+&lt;p&gt;&lt;a href="https://git-scm.com/"&gt;Git&lt;/a&gt; for Windows 已經包含在可攜程式系統中, 只要在 start.bat 啟動後所帶出的命令列中輸入 git 即可使用, 而 &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; 為雲端上提供 &lt;a href="https://git-scm.com/"&gt;Git&lt;/a&gt; 伺服器的服務商, 只要公開所建立的倉儲內容, 可以免費使用.&lt;/p&gt;
+&lt;p&gt;首先建立個人的 &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; 帳號後, 建立練習用的倉儲, 並且將分支內定為 gh-pages, 因為之後會將目前位於 &lt;a href="https://www.fossil-scm.org"&gt;Fossil SCM&lt;/a&gt; 伺服器中的網際投影片與網誌系統, 同步到個人的 &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; 期末專案倉儲中, 因此需要使用 gh-pages 分支, 用瀏覽器擷取 "帳號.github.io/倉儲" 網址上的資料.&lt;/p&gt;
+&lt;p&gt;以下為上課所錄製的說明教學影片:&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/244140958" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/244140958"&gt;國立虎尾科技大學機械設計工程系計算機程式 - 一甲第十一週第一部分, 說明如何在 Github 建立倉儲, 如何利用 gh-pages 分支伺服 index.html&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;接著, 在兩門課程中, 都需要以分組進行協同期末專案, 因此必須練習將其他組員設為協同者的操作, 以下為相關教學影片:&lt;/p&gt;
+&lt;iframe src="https://player.vimeo.com/video/244145500" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/244145500"&gt;國立虎尾科技大學機械設計工程系計算機程式 - 一甲第十一週第二部分, 說明如何在 Github 倉儲中新增協同者, 以及協同者如何接受邀請.&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2&gt;計算機程式期末示範倉儲&lt;/h2&gt;
+&lt;p&gt;計算機程式的期末專案為一般簡易式的視窗計算機程式開發， 示範倉儲位於 &lt;a href="https://github.com/scrum-1/scrum_pyqt5_calculator"&gt;https://github.com/scrum-1/scrum_pyqt5_calculator&lt;/a&gt;&lt;/p&gt;
+&lt;h2&gt;電腦輔助設計實習示範倉儲&lt;/h2&gt;
+&lt;p&gt;電腦輔助設計實習的期末專案則為可循環運作的鋼球運動系統, 示範倉儲位於 &lt;a href="https://github.com/scrum-1/scrum_cadp_final"&gt;https://github.com/scrum-1/scrum_cadp_final&lt;/a&gt;&lt;/p&gt;</content><category term="2017fall"></category><category term="Github"></category></entry><entry><title>事件導向程式設計</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-event-driven-programming-design.html" rel="alternate"></link><published>2017-11-22T12:00:00+08:00</published><updated>2017-11-22T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-11-22:/2017fall/doc/trunk/blog/kmol-2017-fall-event-driven-programming-design.html</id><summary type="html">&lt;p&gt;目前正在進行中的普通計算機程式設計, 採用 PyQt5 與 Python3 建立, 預計採用事件導向的方式完成.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;目前正在進行中的普通計算機程式設計, 採用 PyQt5 與 Python3 建立, 預計採用事件導向的方式完成.&lt;/p&gt;
 
 
