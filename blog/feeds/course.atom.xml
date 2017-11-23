@@ -19,6 +19,10 @@
 &lt;h2&gt;計算機程式期末示範倉儲&lt;/h2&gt;
 &lt;p&gt;計算機程式的期末專案為一般簡易式的視窗計算機程式開發， 示範倉儲位於 &lt;a href="https://github.com/scrum-1/scrum_pyqt5_calculator"&gt;https://github.com/scrum-1/scrum_pyqt5_calculator&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;電腦輔助設計實習示範倉儲&lt;/h2&gt;
+&lt;iframe src="https://player.vimeo.com/video/244161166" width="640" height="491" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;a href="https://vimeo.com/244161166"&gt;國立虎尾科技大學機械設計工程系電腦輔助設計實習 - 二甲第十一週第一部分, 說明如何利用 Github 倉儲執行各小組的期末機電資協同專案.&lt;/a&gt; from &lt;a href="https://vimeo.com/user24079973"&gt;國立虎尾科技大學機械設計工程系&lt;/a&gt; on &lt;a href="https://vimeo.com"&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;
+
 &lt;p&gt;電腦輔助設計實習的期末專案則為可循環運作的鋼球運動系統, 示範倉儲位於 &lt;a href="https://github.com/scrum-1/scrum_cadp_final"&gt;https://github.com/scrum-1/scrum_cadp_final&lt;/a&gt;&lt;/p&gt;</content><category term="2017fall"></category><category term="Github"></category></entry><entry><title>事件導向程式設計</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-event-driven-programming-design.html" rel="alternate"></link><published>2017-11-22T12:00:00+08:00</published><updated>2017-11-22T12:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-11-22:/2017fall/doc/trunk/blog/kmol-2017-fall-event-driven-programming-design.html</id><summary type="html">&lt;p&gt;目前正在進行中的普通計算機程式設計, 採用 PyQt5 與 Python3 建立, 預計採用事件導向的方式完成.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;目前正在進行中的普通計算機程式設計, 採用 PyQt5 與 Python3 建立, 預計採用事件導向的方式完成.&lt;/p&gt;
 
