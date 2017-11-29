@@ -297,7 +297,91 @@ $(function() {
 &lt;p&gt;&lt;a href="https://github.com/"&gt;Github&lt;/a&gt; 的初步使用, 可以參考 &lt;a href="https://guides.github.com/activities/hello-world/"&gt;https://guides.github.com/activities/hello-world/&lt;/a&gt;, 較完整的 &lt;a href="https://git-scm.com/"&gt;Git&lt;/a&gt; 使用說明, 請參考 &lt;a href="https://git-scm.com/book/zh-tw/v2"&gt;https://git-scm.com/book/zh-tw/v2&lt;/a&gt;.&lt;/p&gt;
 &lt;h2&gt;課程實習&lt;/h2&gt;
 &lt;p&gt;自第十二週起, 每一位學員必須利用各自學校配發的 Gmail 申請 &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; 帳號, 計算機程式將以小組為單位, 練習利用分組 &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; 倉儲, 協同開發 Python3 + PyQt5 程式, 並準備各組的簡報、網頁與 PDF 格式的期末報告.&lt;/p&gt;
-&lt;p&gt;電腦輔助設計實習課程學員, 尚未申請 &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; 者, 也必須自行申請, 之後必須設法在小組倉儲中準備各組的簡報網頁與 PDF 格式的期末報告.&lt;/p&gt;</content><category term="2017fall"></category><category term="report"></category><category term="Pelican"></category><category term="Pandoc"></category><category term="Markdown"></category></entry><entry><title>何謂電腦輔助設計?</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-cadp-what-is-computer-aided-design.html" rel="alternate"></link><published>2017-11-15T11:00:00+08:00</published><updated>2017-11-15T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-11-15:/2017fall/doc/trunk/blog/kmol-2017-fall-cadp-what-is-computer-aided-design.html</id><summary type="html">&lt;p&gt;電腦輔助設計的英文為 Computer Aided Design, 大意是運用電腦的功能與特性, 協助使用者完成設計.&lt;/p&gt;
+&lt;p&gt;電腦輔助設計實習課程學員, 尚未申請 &lt;a href="https://github.com/"&gt;Github&lt;/a&gt; 者, 也必須自行申請, 之後必須設法在小組倉儲中準備各組的簡報網頁與 PDF 格式的期末報告.&lt;/p&gt;</content><category term="2017fall"></category><category term="report"></category><category term="Pelican"></category><category term="Pandoc"></category><category term="Markdown"></category></entry><entry><title>reStructuredText 格式網誌</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-restrcturedtext-format-blog.html" rel="alternate"></link><published>2017-11-18T11:20:00+08:00</published><updated>2017-11-18T18:40:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-11-18:/2017fall/doc/trunk/blog/kmol-2017-fall-restrcturedtext-format-blog.html</id><summary type="html">&lt;p&gt;Pelican 靜態網誌的文章編寫, 可以採 &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Markdown"&gt;Markdown&lt;/a&gt; 格式, 存為 .md 檔案, 也可以採 &lt;a class="reference external" href="https://en.wikipedia.org/wiki/ReStructuredText"&gt;reStructuredText&lt;/a&gt; 格式, 存為 .rst&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;Pelican 靜態網誌的文章編寫, 可以採 &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Markdown"&gt;Markdown&lt;/a&gt; 格式, 存為 .md 檔案, 也可以採 &lt;a class="reference external" href="https://en.wikipedia.org/wiki/ReStructuredText"&gt;reStructuredText&lt;/a&gt; 格式, 存為 .rst&lt;/p&gt;
+
+&lt;p&gt;&lt;a class="reference external" href="https://en.wikipedia.org/wiki/Markdown"&gt;Markdown&lt;/a&gt; 格式的資料, 主要應用於網頁, 而 &lt;a class="reference external" href="https://en.wikipedia.org/wiki/ReStructuredText"&gt;reStructuredText&lt;/a&gt; 格式的資料, 則設計用來編寫科技文章.&lt;/p&gt;
+&lt;div class="section" id="sphinx"&gt;
+&lt;h2&gt;Sphinx&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.sphinx-doc.org"&gt;Sphinx&lt;/a&gt; 是 Python 專用的說明文件產生器, 可以將 &lt;a class="reference external" href="https://en.wikipedia.org/wiki/ReStructuredText"&gt;reStructuredText&lt;/a&gt; 格式的內容轉為一般 HTML、Windows HTML Help、LaTeX、ePub、Texinfo、manual pages 與 plain text 格式內容.&lt;/p&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://www.sphinx-doc.org"&gt;Sphinx&lt;/a&gt; 的功能:&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;Output formats: HTML (including Windows HTML Help), &lt;a class="reference external" href="https://www.latex-project.org"&gt;LaTeX&lt;/a&gt; (for printable PDF versions), ePub, Texinfo, manual pages, plain text&lt;/li&gt;
+&lt;li&gt;Extensive cross-references: semantic markup and automatic links for functions, classes, citations, glossary terms and similar pieces of information&lt;/li&gt;
+&lt;li&gt;Hierarchical structure: easy definition of a document tree, with automatic links to siblings, parents and children&lt;/li&gt;
+&lt;li&gt;Automatic indices: general index as well as a language-specific module indices&lt;/li&gt;
+&lt;li&gt;Code handling: automatic highlighting using the Pygments highlighter&lt;/li&gt;
+&lt;li&gt;Extensions: automatic testing of code snippets, inclusion of docstrings from Python modules (API docs), and more&lt;/li&gt;
+&lt;li&gt;Contributed extensions: more than 50 extensions contributed by users in a second repository; most of them installable from PyPI&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;print&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;Pelican is a static site generator.&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;連結資料的引用, 可以在設定內容之前, 也可以放在設定內容之後, 例如: &lt;a class="reference external" href="https://en.wikipedia.org/wiki/ReStructuredText"&gt;reStructuredText&lt;/a&gt; 連結的引用設在定義連結之後, 而上一段同一關鍵字的連結引用, 則放在連結設定定義之前 換言之, 整個文章會用到的連結資料, 可以統一整理在 .rst 文章任何位置後, 再用於編輯文章時使用.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="id3"&gt;
+&lt;h2&gt;Pandoc 手冊&lt;/h2&gt;
+&lt;p&gt;&lt;a class="reference external" href="http://pandoc.org/MANUAL.html"&gt;PandocUserGuide&lt;/a&gt; 是 &lt;a class="reference external" href="http://pandoc.org"&gt;Pandoc&lt;/a&gt; 的使用者手冊&lt;/p&gt;
+&lt;p&gt;以下為 bullet list 用法:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p class="first"&gt;This is the first bullet list item.  The blank line above the
+first list item is required; blank lines between list items
+(such as below this paragraph) are optional.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;This is the first paragraph in the second item in the list.&lt;/p&gt;
+&lt;p&gt;This is the second paragraph in the second item in the list.
+The blank line above this paragraph is required.  The left edge
+of this paragraph lines up with the paragraph above, both
+indented relative to the bullet.&lt;/p&gt;
+&lt;ul class="simple"&gt;
+&lt;li&gt;This is a sublist.  The bullet lines up with the left edge of
+the text blocks above.  A sublist is a new list so requires a
+blank line above and below.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p class="first"&gt;This is the third item of the main list.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This paragraph is not part of the list.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="status"&gt;
+&lt;h2&gt;文章 Status&lt;/h2&gt;
+&lt;p&gt;Pelican 靜態網誌中所準備的文章, 目前放在 content 目錄中, 可以使用 .md 或者 .rst 的格式, 假如文章尚未完成, 使用者可以在文章標題欄位中, 加入一個 status 欄位, 若為 draft, 表示文章為草稿, 轉檔時不會轉為 html 格式, 若 status 為內定的 published, 則表示文章已經完成, 可以透過 Leo Editor 的轉檔按鈕轉入 Blog 內容.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="pelican-plugins"&gt;
+&lt;h2&gt;Pelican Plugins&lt;/h2&gt;
+&lt;p&gt;目前所使用的 Pelican 網誌, 設定時納入 summary 的延伸功能, 使用者可以在文章中加入內容為 PELICAN_END_SUMMARY 的註解, 在 Markdown 中可以使用 html 註解格式, 而在 rst 中, 則可以在前面加入兩個逗號, 表示該分隔註解與內文的標註為註解, Pelican 網誌系統轉檔時, 只會啟用分隔功能, 不會納入該行資料.&lt;/p&gt;
+&lt;p&gt;&lt;abbr title="https://github.com/getpelican/pelican-plugins/tree/master/summary"&gt;Summary Plugin&lt;/abbr&gt;&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="reStructuredText"></category><category term="TeX"></category></entry><entry><title>如何編寫期末報告?</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-how-to-write-a-report.html" rel="alternate"></link><published>2017-11-18T11:00:00+08:00</published><updated>2017-11-18T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-11-18:/2017fall/doc/trunk/blog/kmol-2017-fall-how-to-write-a-report.html</id><summary type="html">&lt;p&gt;報告 (Report) 是一種經由觀察 (Observation) 與查問 (Inquiry) 手段, 針對相關事件 (Event) 所完成的詳細說明 (Statement describing in detail).&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;報告 (Report) 是一種經由觀察 (Observation) 與查問 (Inquiry) 手段, 針對相關事件 (Event) 所完成的詳細說明 (Statement describing in detail).&lt;/p&gt;
+
+
+&lt;h3&gt;報告的基本要素&lt;/h3&gt;
+&lt;p&gt;課程中要求學員繳交期末報告之目的, 在評定學習成效 (Level of learning achievement), 並藉以給分 (Grading). &lt;/p&gt;
+&lt;p&gt;期末報告的基本內容:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;標題頁 - 含報告標題、作者、日期與所屬單位
+目錄 - 列出全文章節與所屬頁面連結
+摘要 - 解釋報告編寫動機、報告重點、結論、建議與關鍵字
+前言 - 簡要描述全文意旨與背景, 說明報告目標與報告內容組成架構
+內文 - 依照章節標題, 詳細說明報告內容, 包括方法、操作步驟與所得結果的詳細說明
+結論 - 條列所獲致的重要成果, 與摘要及導言中的目標互相呼應
+討論與建議 - 說明後續值得進行的方向、方法與可能遭遇問題的討論
+參考 - 詳列所引用的參考內容
+附錄 - 附加值得參考的詳細內容
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;這裡所要求的期末報告, &lt;span style="background-color: #ffff00;"&gt;必須繳交 .docx, .tex, .md 等原始檔案外, 還必須轉為 .pdf 格式繳交&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;其中 pdf 檔案的第一頁就是期末報告標題頁, 必須註明報告標題, 作者, 日期與所屬單位.&lt;/p&gt;
+&lt;p&gt;緊接著標題頁之後, 必須預留一頁空白, 然後接報告目錄. 目錄必須包含各章節標題以及所屬頁次.&lt;/p&gt;
+&lt;p&gt;報告目錄之後, 再預留一頁空白之後, 接報告摘要, 主要解釋報告編寫動機、報告重點、結論、建議與關鍵字.&lt;/p&gt;
+&lt;p&gt;摘要之後直接開始從前言 (Introduction) 編寫各章節內容, 其中必須善用文字之外, 還要利用 2D 圖表, 並將相關操作過程拍攝為 mp4 影片上傳到 Vimeo 與 Youtube, 並在內文中提供連結.&lt;/p&gt;
+&lt;p&gt;目前的計算機程式除了簡單的加減乘除運算之外, 並沒有其他數學理論內容, 但是電腦輔助設計實習課程中, 有關機構分析, 干涉約束點的運算都可以藉數學分析進行設計表達, 且簡單的機構合成部分除了可以使用圖解法外, 也可以利用解聯立方程式或合成演算法求解, 各學員可以在報告內文中加以陳述各鋼球循環運動系統設計中, 所運用的數學理論分析.&lt;/p&gt;
+&lt;p&gt;最後, 期末報告的附錄, 可以放入內文中所提到使用的程式原始碼或其他相關摘錄的說明手冊等資料.&lt;/p&gt;
+&lt;h3&gt;參考資料&lt;/h3&gt;
+&lt;p&gt;&lt;a href="https://cdict.net/"&gt;cdict&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.otago.ac.nz/accountancyfinance/study/resources/otago01515115.html"&gt;The key elements of a report&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://www.skillsyouneed.com/write/report-writing.html"&gt;How to Write a Report?&lt;/a&gt;&lt;/p&gt;</content><category term="2017fall"></category><category term="report"></category><category term="期末報告"></category></entry><entry><title>何謂電腦輔助設計?</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-cadp-what-is-computer-aided-design.html" rel="alternate"></link><published>2017-11-15T11:00:00+08:00</published><updated>2017-11-15T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-11-15:/2017fall/doc/trunk/blog/kmol-2017-fall-cadp-what-is-computer-aided-design.html</id><summary type="html">&lt;p&gt;電腦輔助設計的英文為 Computer Aided Design, 大意是運用電腦的功能與特性, 協助使用者完成設計.&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;電腦輔助設計的英文為 Computer Aided Design, 大意是運用電腦的功能與特性, 協助使用者完成設計.&lt;/p&gt;
 
 

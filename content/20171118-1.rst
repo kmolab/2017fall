@@ -6,7 +6,7 @@ reStructuredText 格式網誌
 :tags: reStructuredText, TeX
 :category: Course
 :slug: kmol-2017-fall-restrcturedtext-format-blog
-:status: draft
+:status: published
 :authors: yen
 
 Pelican 靜態網誌的文章編寫, 可以採 Markdown_ 格式, 存為 .md 檔案, 也可以採 reStructuredText_ 格式, 存為 .rst 
@@ -54,29 +54,7 @@ Pandoc 手冊
 
 PandocUserGuide_ 是 Pandoc_ 的使用者手冊
 
-footnotes
-
-tables
-
-flexible ordered lists
-
-definition lists
-
-fenced code blocks
-
-superscript
-
-This will be turned into :abbr:`HTML (HyperText Markup Language)`.
-
-strikeout
-
-title blocks
-
-automatic tables of contents
-
-embedded LaTeX math
-
-citations
+以下為 bullet list 用法:
 
 - This is the first bullet list item.  The blank line above the
   first list item is required; blank lines between list items
