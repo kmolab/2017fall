@@ -8,9 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--
--->
-
+    
 <!-- for LaTeX equations -->
 <script src="./../data/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>
 <script type="text/javascript">
@@ -42,25 +40,31 @@ init_mathjax();
         <meta property="og:site_name" content="2017Fall CADP&CP (虎尾科大MDE)" />
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="2017Fall CADP&CP (虎尾科大MDE)"/>
-        <meta property="og:url" content="https://mde1a1.kmol.info/2017fall/doc/trunk/blog"/>
+        <meta property="og:url" content=".."/>
         <meta property="og:description" content="2017Fall CADP&CP (虎尾科大MDE)"/>
 
 
     <!-- Bootstrap -->
-        <link rel="stylesheet" href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/theme/css/bootstrap.united.min.css" type="text/css"/>
-    <link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/theme/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="../theme/css/bootstrap.united.min.css" type="text/css"/>
+    <link href="../theme/css/font-awesome.min.css" rel="stylesheet">
 
-    <link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/theme/css/pygments/monokai.css" rel="stylesheet">
-    <link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/theme/tipuesearch/tipuesearch.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/theme/css/style.css" type="text/css"/>
+    <link href="../theme/css/pygments/monokai.css" rel="stylesheet">
+    <link href="../theme/tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link rel="stylesheet" href="../theme/css/style.css" type="text/css"/>
 
-        <link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+        <link href="../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
               title="2017Fall CADP&CP (虎尾科大MDE) ATOM Feed"/>
 
 <!-- for img border -->
   <style type="text/css">
 .border { 
    border:2px solid black;
+}
+
+table, th, td {
+   border: 1px solid black;
+    padding: 15px;
+    text-align: left;
 }
   </style>
   
@@ -75,9 +79,6 @@ init_mathjax();
 <script type="text/javascript" src="./../data/syntaxhighlighter/shBrushCss.js"></script>
 <script type="text/javascript" src="./../data/syntaxhighlighter/shBrushCSharp.js"></script>
 <script type="text/javascript" src="./../data/syntaxhighlighter/shBrushBash.js"></script>
-<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushLua.js"></script>
-<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushMakefile.min.js"></script>
-<script type="text/javascript" src="./../data/syntaxhighlighter/shBrushMakefile.js"></script>
 <script type='text/javascript'>
 	(function(){
 		var corecss = document.createElement('link');
@@ -114,24 +115,6 @@ init_mathjax();
 	SyntaxHighlighter.all();
 </script>
 
-<!-- for table style start -->
-<style>
-table, td, th {    
-    border: 1px solid #ddd;
-    text-align: left;
-}
-
-table {
-    border-collapse: collapse;
-    width: 100%;
-}
-
-th, td {
-    padding: 15px;
-}
-</style>
-<!-- for table style end -->
-
 </head>
 <body>
 
@@ -144,23 +127,23 @@ th, td {
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/" class="navbar-brand">
+            <a href="../" class="navbar-brand">
 2017Fall CADP&CP (虎尾科大MDE)            </a>
         </div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
                     <li><a href="pages/about/">About</a></li>
                         <li >
-                            <a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/category/course.html">Course</a>
+                            <a href="../category/course.html">Course</a>
                         </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><span>
-                <form class="navbar-search" action="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/search.html">
+                <form class="navbar-search" action="../search.html">
                   <input type="text" class="search-query" placeholder="Search" name="q" id="tipue_search_input" required>
                 </form></span>
               </li>
-              <li><a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+              <li><a href="../archives.html"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->
@@ -173,98 +156,98 @@ th, td {
         <div class="col-sm-9">
 
             <article>
-                <h2><a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-w8-summary.html">第八週課程內容整理</a></h2>
+                <h2><a href="../kmol-2017-fall-pyqt5-1.html">CP PyQt5 視窗程式 (一)</a></h2>
+                <div class="summary"><p>2017 年 Fall 的計算機程式課程開始導入 <a href="http://pyqt.sourceforge.net/Docs/PyQt5/modules.html">PyQt5</a> 視窗程式教學, 其中使用 <a href="https://eric-ide.python-projects.org">Eric6</a> 整合開發環境簡化初學者建立視窗表單.</p>
+
+                    <a class="btn btn-default btn-xs" href="../kmol-2017-fall-pyqt5-1.html">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../kmol-2017-fall-w8-summary.html">第八週課程內容整理</a></h2>
                 <div class="summary"><p>2017 年 Fall 的課程進行到接近一半, 本週整理計算機程式與電腦輔助設計實習的課程相關內容, 說明各種工具的特性與學習重點.</p>
 
-                    <a class="btn btn-default btn-xs" href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-w8-summary.html">more ...</a>
+                    <a class="btn btn-default btn-xs" href="../kmol-2017-fall-w8-summary.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-cadp-w7-exam.html">CADP 第七週線上考試</a></h2>
+                <h2><a href="../kmol-cadp-w7-exam.html">CADP 第七週線上考試</a></h2>
                 <div class="summary"><p>W7-W9 週為本學期期中階段的考試週, 其中第一堂課時間將要求學員直接利用教室中的電腦 ,以 ShareX 拍攝與課程相關的操作影片.</p>
 
-                    <a class="btn btn-default btn-xs" href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-cadp-w7-exam.html">more ...</a>
+                    <a class="btn btn-default btn-xs" href="../kmol-cadp-w7-exam.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-cp-w7-exam.html">CP 第七週線上考試</a></h2>
+                <h2><a href="../kmol-cp-w7-exam.html">CP 第七週線上考試</a></h2>
                 <div class="summary"><p>W7-W9 週為本學期期中階段的考試週, 其中第一堂課時間將要求學員直接利用教室中的電腦 ,以 ShareX 拍攝與課程相關的操作影片.</p>
 
-                    <a class="btn btn-default btn-xs" href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-cp-w7-exam.html">more ...</a>
+                    <a class="btn btn-default btn-xs" href="../kmol-cp-w7-exam.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-integrated-course-introduction.html">KMOL 整合課程介紹</a></h2>
+                <h2><a href="../kmol-integrated-course-introduction.html">KMOL 整合課程介紹</a></h2>
                 <div class="summary"><p><span style="background-color: #ffff00;">KMOL</span> 是 KMOUL 的簡寫, 全文為 Knowledge Management and Optimal Utilization Laboratory, 也就是<span style="background-color: #ffff00;">知識管理與最佳化應用實驗室</span> (KMOLab). 目前由 KMOL 實驗室負責的課程有大一的計算機程式與網際內容管理, 以及大二的電腦輔助設計實習與協同產品設計實習.</p>
 
-                    <a class="btn btn-default btn-xs" href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-integrated-course-introduction.html">more ...</a>
+                    <a class="btn btn-default btn-xs" href="../kmol-integrated-course-introduction.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-course-cp-w6.html">2017 Fall CP 第六週 - Python3 程式語法練習</a></h2>
+                <h2><a href="../kmol-2017-fall-course-cp-w6.html">2017 Fall CP 第六週 - Python3 程式語法練習</a></h2>
                 <div class="summary"><p>本週起開始使用 Eric6 IDE 建立 PyQt5 視窗程式, 計算器程式的圖形介面將從 Qt Designer 中, 以滑鼠及視覺化模式建立, 之後再轉為 .py 程式後, 與隨後的程式邏輯進行互動. 請使用者自行下載 <a href="https://link.springer.com/book/10.1007/978-1-4842-2385-7">Lean Python</a> 電子書與<a href="https://github.com/Apress/lean-python">範例程式</a>配合學習.</p>
 
-                    <a class="btn btn-default btn-xs" href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-course-cp-w6.html">more ...</a>
+                    <a class="btn btn-default btn-xs" href="../kmol-2017-fall-course-cp-w6.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-course-cadp-w5.html">2017 Fall CADP 第五週 - Solvespace & V-rep</a></h2>
+                <h2><a href="../kmol-2017-fall-course-cadp-w5.html">2017 Fall CADP 第五週 - Solvespace & V-rep</a></h2>
                 <div class="summary"><p>本週起各學員開始利用 Solvesapce 建立 <a href="./../../../raw/ProEMechanism.pdf?name=a48a8c10af4e636b37ff9c8bc6e98ff00af0ac44">Nutcracker</a> 系統的零組件, 並且將所完成的零組件顯示在網誌中, 並提供 .slvs 檔案下載.</p>
 <p>請各學員在完成各零件繪圖與組立時, 將練習影片上傳到個人 Vimeo 與 Youtube 區, 並清楚標定影片標題與簡介, 各影片必須明確顯示校名、系名、課程名稱與使用者學號等資訊, 並在各影片的內容說明連回自己的網誌.</p>
 
-                    <a class="btn btn-default btn-xs" href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-course-cadp-w5.html">more ...</a>
+                    <a class="btn btn-default btn-xs" href="../kmol-2017-fall-course-cadp-w5.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-course-cp-w5.html">2017 Fall CP 第五週 - PyQt5 Calculator</a></h2>
+                <h2><a href="../kmol-2017-fall-course-cp-w5.html">2017 Fall CP 第五週 - PyQt5 Calculator</a></h2>
                 <div class="summary"><p>W5 PyQt5</p>
 
-                    <a class="btn btn-default btn-xs" href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-course-cp-w5.html">more ...</a>
+                    <a class="btn btn-default btn-xs" href="../kmol-2017-fall-course-cp-w5.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-cadp-w4.html">2017 Fall CP 第四週 - Brython 程式環境</a></h2>
+                <h2><a href="../kmol-2017-fall-cadp-w4.html">2017 Fall CP 第四週 - Brython 程式環境</a></h2>
                 <div class="summary"><p>本週開始將利用 Python3 與 PyQt5 建立一個簡單的計算器, 其中會使用基本的 Python3 程式語法, 也必須了解 Python3 物件導向與視窗事件驅動程式的基本概念. 以下的網頁 Brython 程式架構, 因內容牽涉 Javascript 程式庫的導入與啟動, 僅提供練習 Python3 程式語法與參考用.</p>
 
-                    <a class="btn btn-default btn-xs" href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-cadp-w4.html">more ...</a>
+                    <a class="btn btn-default btn-xs" href="../kmol-2017-fall-cadp-w4.html">more ...</a>
                 </div>
             </article>
             <hr/>
             <article>
-                <h2><a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-cadp-w3.html">2017 Fall CADP 第三週 - Fossil SCM & 網誌及投影片</a></h2>
+                <h2><a href="../kmol-2017-fall-cadp-w3.html">2017 Fall CADP 第三週 - Fossil SCM & 網誌及投影片</a></h2>
                 <div class="summary"><p>截至本週, 各學員的 Fossil SCM 倉儲已經可以透過 Wiki 儲存各週數位筆記, 並利用 Files 中的 Pelican Blog 與 Reveal.js 投影片架構, 提供各週詳細的學習報告. 使用 Fossil SCM 管理各學員的網誌與投影片的目的, 在建立往後進行協同設計所需的基本架構.</p>
 
-                    <a class="btn btn-default btn-xs" href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-cadp-w3.html">more ...</a>
-                </div>
-            </article>
-            <hr/>
-            <article>
-                <h2><a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-cp-w3.html">2017 Fall CP 第三週 - 視窗命令列與 Fossil SCM 常用指令</a></h2>
-                <div class="summary"><p>首先要介紹基本的視窗命令提示指令 (Command Prompt Commands), 接著說明如何 clone 帶有網誌與投影片架構檔案的倉儲, 並且複製到各學員的倉儲後, 提交推送到遠端倉儲伺服器.</p>
-
-                    <a class="btn btn-default btn-xs" href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-cp-w3.html">more ...</a>
+                    <a class="btn btn-default btn-xs" href="../kmol-2017-fall-cadp-w3.html">more ...</a>
                 </div>
             </article>
             <hr/>
 
         <ul class="pagination">
-                <li class="prev"><a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tag/2017fall.html">&laquo;</a>
+                <li class="prev"><a href="../tag/2017fall.html">&laquo;</a>
                 </li>
                     <li class=""><a
-                            href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tag/2017fall.html">1</a></li>
+                            href="../tag/2017fall.html">1</a></li>
                     <li class="active"><a
-                            href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tag/2017fall2.html">2</a></li>
+                            href="../tag/2017fall2.html">2</a></li>
                     <li class=""><a
-                            href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tag/2017fall3.html">3</a></li>
+                            href="../tag/2017fall3.html">3</a></li>
                 <li class="next"><a
-                        href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tag/2017fall3.html">&raquo;</a></li>
+                        href="../tag/2017fall3.html">&raquo;</a></li>
         </ul>
         </div>
         <div class="col-sm-3" id="sidebar">
@@ -276,44 +259,44 @@ th, td {
             <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Recent Posts</span></h4>
                 <ul class="list-group" id="recentposts">
                     <li class="list-group-item">
-                        <a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-github-pages.html">
+                        <a href="../kmol-2017-fall-intro-to-ck-theory-on-programming.html">
+                            使用 C-K 理論設計程式
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="../kmol-2017-fall-github-pages.html">
                             Github 協同倉儲
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-event-driven-programming-design.html">
+                        <a href="../kmol-2017-fall-event-driven-programming-design.html">
                             事件導向程式設計
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-pelican-and-pandoc-markdown-format.html">
+                        <a href="../kmol-2017-fall-pelican-and-pandoc-markdown-format.html">
                             Pelican 與 Pandoc MD 導引
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-how-to-write-a-report.html">
+                        <a href="../kmol-2017-fall-how-to-write-a-report.html">
                             如何編寫期末報告?
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-cadp-what-is-computer-aided-design.html">
-                            何謂電腦輔助設計?
                         </a>
                     </li>
                 </ul>
             </li>
 
-            <li class="list-group-item"><a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/categories.html"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Categories</span></h4></a>
+            <li class="list-group-item"><a href="../categories.html"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Categories</span></h4></a>
                 <ul class="list-group" id="categories">
                     <li class="list-group-item">
-                        <a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/category/course.html">
+                        <a href="../category/course.html">
                             <i class="fa fa-folder-open fa-lg"></i> Course
                         </a>
                     </li>
                 </ul>
             </li>
 
-            <li class="list-group-item"><a href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tags.html"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+            <li class="list-group-item"><a href="../tags.html"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
                 <ul class="list-group list-inline tagcloud" id="tags">
                 </ul>
             </li>
@@ -359,35 +342,20 @@ th, td {
       </div>
    </div>
 </footer>
-<script src="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/theme/js/jquery.min.js"></script>
+<script src="../theme/js/jquery.min.js"></script>
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/theme/js/bootstrap.min.js"></script>
+<script src="../theme/js/bootstrap.min.js"></script>
 
 <!-- for https://github.com/jsor/lity lightbox video popup -->
 
-<link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/theme/css/lity.css" rel="stylesheet">
+<link href="../theme/css/lity.css" rel="stylesheet">
 
-<script src="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/theme/js/lity.js"></script>
+<script src="../theme/js/lity.js"></script>
 
 <!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
-<script src="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/theme/js/respond.min.js"></script>
+<script src="../theme/js/respond.min.js"></script>
 
-    <!-- Disqus -->
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-        var disqus_shortname = 'kmolabmde'; // required: replace example with your forum shortname
-
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function () {
-            var s = document.createElement('script');
-            s.async = true;
-            s.type = 'text/javascript';
-            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-        }());
-    </script>
-    <!-- End Disqus Code -->
 
 </body>
 </html>
