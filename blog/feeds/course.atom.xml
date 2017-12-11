@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Fall CADP&amp;CP (虎尾科大MDE) - Course</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/" rel="alternate"></link><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/feeds/course.atom.xml" rel="self"></link><id>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/</id><updated>2017-12-05T11:00:00+08:00</updated><entry><title>視窗計算機程式開發</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-windows-calculator-development.html" rel="alternate"></link><published>2017-12-05T11:00:00+08:00</published><updated>2017-12-05T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-12-05:/2017fall/doc/trunk/blog/kmol-2017-fall-windows-calculator-development.html</id><summary type="html">&lt;p&gt;Python3 + PyQt5 計算機程式開發&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>2017Fall CADP&amp;CP (虎尾科大MDE) - Course</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/" rel="alternate"></link><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/feeds/course.atom.xml" rel="self"></link><id>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/</id><updated>2017-12-10T11:00:00+08:00</updated><entry><title>導入 Let's Encrypt 數位簽章</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-let-us-encrypt-intro.html" rel="alternate"></link><published>2017-12-10T11:00:00+08:00</published><updated>2017-12-10T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-12-10:/2017fall/doc/trunk/blog/kmol-2017-fall-let-us-encrypt-intro.html</id><summary type="html">&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Let%27s_Encrypt"&gt;Let's encrypt&lt;/a&gt; 從 2016 年 4 月起開始免費推廣自動化的數位簽章技術, 儘管每次僅有 90 天的效期, 但可採用自動化流程更新, 讓網站與用戶間的資料傳輸更容易保全.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Let%27s_Encrypt"&gt;Let's encrypt&lt;/a&gt; 從 2016 年 4 月起開始免費推廣自動化的數位簽章技術, 儘管每次僅有 90 天的效期, 但可採用自動化流程更新, 讓網站與用戶間的資料傳輸更容易保全.&lt;/p&gt;
+
+
+&lt;h2&gt;&lt;a href="https://nginx.org/en/"&gt;Nginx&lt;/a&gt; https 數位簽章&lt;/h2&gt;
+&lt;p&gt;將 &lt;a href="https://en.wikipedia.org/wiki/Let%27s_Encrypt"&gt;Let's encrypt&lt;/a&gt; 技術套用到 &lt;a href="https://nginx.org/en/"&gt;Nginx&lt;/a&gt; 網站, 配合 &lt;a href="https://www.ubuntu.com/"&gt;Ubuntu&lt;/a&gt; 16.04 操作系統, 只要依照 &lt;a href="https://certbot.eff.org/#ubuntuxenial-nginx"&gt;certbot&lt;/a&gt; 所提供的流程, 進行安裝:&lt;/p&gt;
+&lt;pre class="brush: jscript"&gt;
+$ sudo apt-get update
+$ sudo apt-get install software-properties-common
+$ sudo add-apt-repository ppa:certbot/certbot
+$ sudo apt-get update
+$ sudo apt-get install python-certbot-nginx 
+&lt;/pre&gt;
+
+&lt;p&gt;然後透過 $ sudo certbot --nginx 讓 &lt;a href="https://certbot.eff.org/#ubuntuxenial-nginx"&gt;certbot&lt;/a&gt; 自動設定所需的 https 連線參數, 即可取得 fullchain.pem 與 privkey.pem 等兩數位公鑰與私鑰檔案.&lt;/p&gt;
+&lt;p&gt;更新簽章時, 則透過 $ sudo certbot renew 取得新的公私鑰檔案.&lt;/p&gt;
+&lt;h2&gt;Stunnel 以制式數位簽章啟動&lt;/h2&gt;
+&lt;p&gt;取得制式的數位簽章後, 為了讓 &lt;a href="https://www.fossil-scm.org"&gt;Fossil SCM&lt;/a&gt; 能透過 &lt;a href="https://www.stunnel.org"&gt;Stunnel&lt;/a&gt; 以 https 連線, 因此前面被 &lt;a href="https://certbot.eff.org/#ubuntuxenial-nginx"&gt;certbot&lt;/a&gt; 修改的 /etc/nginx/sites-available/default 設定檔案, 必須回復到原狀態, 意即 http 的連線由 &lt;a href="https://nginx.org/en/"&gt;Nginx&lt;/a&gt; 回應, 而 https 則轉由 Stunnel 與 &lt;a href="https://www.fossil-scm.org"&gt;Fossil SCM&lt;/a&gt; 處理, 且 &lt;a href="https://nginx.org/en/"&gt;Nginx&lt;/a&gt; 採 301 redirect 設定, 收到請求後, 直接轉給 &lt;a href="https://www.fossil-scm.org"&gt;Fossil SCM&lt;/a&gt; 處理.&lt;/p&gt;
+&lt;p&gt;default 設定:&lt;/p&gt;
+&lt;pre class="brush: jscript"&gt;
+server {
+listen 80;
+server_name mde1a1.kmol.info;
+rewrite ^/(.*)$ https://mde1a1.kmol.info/$1 permanent;
+}
+&lt;/pre&gt;</content><category term="2017fall"></category><category term="certbot"></category><category term="301 redirect"></category></entry><entry><title>視窗計算機程式開發</title><link href="https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-windows-calculator-development.html" rel="alternate"></link><published>2017-12-05T11:00:00+08:00</published><updated>2017-12-05T11:00:00+08:00</updated><author><name>yen</name></author><id>tag:mde1a1.kmol.info,2017-12-05:/2017fall/doc/trunk/blog/kmol-2017-fall-windows-calculator-development.html</id><summary type="html">&lt;p&gt;Python3 + PyQt5 計算機程式開發&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;Python3 + PyQt5 計算機程式開發&lt;/p&gt;
 
 
