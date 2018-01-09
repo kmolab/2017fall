@@ -5,28 +5,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/</loc>
-<lastmod>2017-12-11T08:17:02-00:00</lastmod>
+<lastmod>2018-01-09T11:30:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/archives.html</loc>
-<lastmod>2017-12-11T08:17:02-00:00</lastmod>
+<lastmod>2018-01-09T11:30:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tags.html</loc>
-<lastmod>2017-12-11T08:17:02-00:00</lastmod>
+<lastmod>2018-01-09T11:30:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/categories.html</loc>
-<lastmod>2017-12-11T08:17:02-00:00</lastmod>
+<lastmod>2018-01-09T11:30:36-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -34,6 +34,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
 <loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/pages/about/</loc>
 <lastmod>2017-09-23T21:52:29+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/kmol-2017-fall-use-scite-convert-pelican-blog.html</loc>
+<lastmod>2018-01-09T11:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
@@ -264,14 +271,28 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/category/course.html</loc>
-<lastmod>2017-12-10T11:00:00+08:06</lastmod>
+<lastmod>2018-01-09T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
 <loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tag/2017fall.html</loc>
-<lastmod>2017-12-10T11:00:00+08:06</lastmod>
+<lastmod>2018-01-09T11:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tag/scite.html</loc>
+<lastmod>2018-01-09T11:00:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tag/pelican.html</loc>
+<lastmod>2018-01-09T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
@@ -313,13 +334,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tag/report.html</loc>
-<lastmod>2017-11-22T11:00:00+08:06</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.5</priority>
-</url>
-
-<url>
-<loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/tag/pelican.html</loc>
 <lastmod>2017-11-22T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
@@ -509,7 +523,7 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
 <loc>https://mde1a1.kmol.info/2017fall/doc/trunk/blog/author/yen.html</loc>
-<lastmod>2017-12-10T11:00:00+08:06</lastmod>
+<lastmod>2018-01-09T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
