@@ -13,6 +13,7 @@
 <v t="yen.20170108171605.2"><vh>@data qt-gui-plugin-style-sheet</vh></v>
 <v t="yen.20170108171605.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 </v>
+<v t="leo.20180119224608.1"><vh>20180119 開始在 github pages 運作</vh></v>
 <v t="yen.20170108171733.1" a="E"><vh>@path ../</vh>
 <v t="leo.20170912150642.1" a="E"><vh>近端無 disqus</vh>
 <v t="yen.20170108171733.2"><vh>@button pelican-blog</vh></v>
@@ -2101,6 +2102,7 @@ pyinstaller -F -w calculator.py
 run dos command as administrator
 
 netsh winhttp import proxy source=ie</t>
+<t tx="leo.20180119224608.1"></t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
